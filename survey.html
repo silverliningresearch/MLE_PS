@@ -51,10 +51,12 @@
               const urlVar03 = urlParams.get('urlVar03')
               const urlVar04 = urlParams.get('urlVar04')
 
-              api.fn.answers({q7a: urlVar01}); //Flight
-              api.fn.answers({q7: urlVar02});  //DestName
-                                               //urlVar03: Dest
-                                               //urlVar04: Airline
+              api.fn.answers({Core_Q7: 1}); //Flight
+              api.fn.answers({Core_Q7_1_text: urlVar01}); //Flight
+              api.fn.answers({Core_Q8: urlVar02});//DestName
+              api.fn.answers({Core_Q7_airline: 1}); //Airline                                               
+              api.fn.answers({Core_Q7_airline_1_text: urlVar04}); //urlVar04: Airline
+
               api.fn.answers({urlVar01: urlVar01});
               api.fn.answers({urlVar02: urlVar02});
               api.fn.answers({urlVar03: urlVar03});

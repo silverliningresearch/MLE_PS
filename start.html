@@ -43,7 +43,7 @@
       }
 
       .red {background-color: #f44336;;} /* Red */
-      .blue {background-color: #0099CC;;} /* Blue */ 
+      .blue {background-color: #3490dc;;} /* Blue */ 
       .yellow {background-color: #da872b;;} /* Yellow */ 
       
       h1 {text-align: center;}
@@ -70,7 +70,7 @@
         data.addColumn('string', 'Time');
         data.addColumn('string', 'Flight');
         data.addColumn('string', 'To');
-        data.addColumn('number', 'Terminal');
+        data.addColumn('string', 'Terminal');
         //data.addColumn('string', 'DOOP');
         data.addColumn('number', 'Remaining Flights');
         data.addColumn('number', 'Quota');
@@ -85,7 +85,7 @@
           var row = daily_plan_data[i];
             { 
                 data.addRows([[row.Date_Time, 
-                row.Flight, row.DestName,  Number(row.TER),
+                row.Flight, row.DestName,  (row.TER),
                 //row.doop, 
                 Number(row.remaining_flights), 
                 Number(row.Quota), Number(row.Completed), Number(row.Difference), 
@@ -194,12 +194,12 @@
   
     <div>
       </br></br></br> </br></br>
-      <button onclick="start_new_interview()" class="button yellow">Start survey</button>
+      <button onclick="start_new_interview()" class="button blue">Start survey</button>
       </br></br>
     </div>
 
     
-    <div style="background-color:#efcb65">
+    <div style="background-color:#202945">
       </br>
     </div>
     

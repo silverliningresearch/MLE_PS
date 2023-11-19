@@ -30,7 +30,7 @@
 
   <body>
     <survalyzer-survey
-      surveyhash="pzyurrrjyu"
+      surveyhash="xawgpwxrkt"
       tenant="silverlining"
     ></survalyzer-survey>
 
@@ -46,13 +46,15 @@
             if ( api.fn.getCurrentPageIndex()==0) {
               const queryString = window.location.search;
               const urlParams = new URLSearchParams(queryString);
-              const urlVar01 = urlParams.get('urlVar01');
+              const urlVar01 = urlParams.get('urlVar01'); 
               const urlVar02 = urlParams.get('urlVar02')
               const urlVar03 = urlParams.get('urlVar03')
               const urlVar04 = urlParams.get('urlVar04')
 
-              api.fn.answers({q7a: urlVar01});
-              api.fn.answers({q7: urlVar02});
+              api.fn.answers({q7a: urlVar01}); //Flight
+              api.fn.answers({q7: urlVar02});  //DestName
+                                               //urlVar03: Dest
+                                               //urlVar04: Airline
               api.fn.answers({urlVar01: urlVar01});
               api.fn.answers({urlVar02: urlVar02});
               api.fn.answers({urlVar03: urlVar03});

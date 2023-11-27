@@ -5,7 +5,7 @@
   
 		<script src="data/quota_data.js"></script>
     <script src="data/invalid_cases.js"></script>
-    <script src="data/BUD_flight_list.js"></script>
+    <script src="data/MLE_departures_flight_list.js"></script>
     <script src="scripts/PrepareData.js"></script>
 		<script src="scripts/CalculateData.js"></script>
     <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_sur/BUD_Commercial/data/interview_data.js"></script> 
@@ -55,8 +55,8 @@
         var data = new google.visualization.DataTable();
 
         //define header
-        data.addColumn('string', 'Airport_Airline');
-        data.addColumn('number', 'Remaining Flights');                
+        data.addColumn('string', 'Airport-Airline');
+        //data.addColumn('number', 'DOOP');
         data.addColumn('number', 'Quota');
         data.addColumn('number', 'Completed');
 				data.addColumn('number', 'Missing');
@@ -67,8 +67,8 @@
           var row = quota_data[i];
           data.addRows([
           [
-            row.Airport_Airline, 
-            Number(row.remaining_flights), 
+            row.quota_id, 
+            //row.DOOP, 
             Number(row.Quota),
             Number(row.Completed), 
             Number(row.Difference), 

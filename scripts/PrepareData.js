@@ -6,6 +6,7 @@ var daily_plan_data;
 var removed_ids_data;
 
 var currentDate; //dd-mm-yyyy
+var currentDayOfWeek; 
 var currentYear;
 var currentMonth; //mm
 var currentQuarter; //1, 2, 3, 4
@@ -23,29 +24,18 @@ var total_quota;
 function initCurrentTimeVars() {
   var today = new Date();
 
-  var day = '' + today.getDate();
-  var month = '' + (today.getMonth() + 1); //month start from 0;
+  var day =  today.getDate();
+  var month = (today.getMonth() + 1); //month start from 0;
   var year = today.getFullYear();
+  currentDayOfWeek = today.getDay();
+  
+  currentDate = (year*10000 +  month*100 + day);
 
-  if (month.length < 2) month = '0' + month;
-  if (day.length < 2) day = '0' + day;
-
-  currentDate = [day, month, year].join('-');
   currentYear = year;
-  currentMonth = month; //[month, year].join('-');;
+  currentMonth = year*10000 +  month*100; 
   currentQuarter = getQuarterFromMonth(currentMonth, currentYear);
 
-  //////////
-  var tomorrow = new Date();
-  tomorrow.setDate(today.getDate()+1);
-  var tomorrowMonth = '' + (tomorrow.getMonth() + 1); //month start from 0;
-  var tomorrowDay = '' + tomorrow.getDate();
-  var tomorrowYear = tomorrow.getFullYear();
-
-  if (tomorrowMonth.length < 2) tomorrowMonth = '0' + tomorrowMonth;
-  if (tomorrowDay.length < 2) tomorrowDay = '0' + tomorrowDay;
-
-  nextDate  = [tomorrowDay, tomorrowMonth, tomorrowYear].join('-');
+  nextDate  = currentDate + 1;
   //////////
   if (document.getElementById('year_month') && document.getElementById('year_month').value.length > 0)
   {
@@ -93,7 +83,7 @@ function getQuarterFromMonth(month, year)
 }
 
 function notDeparted(flight_time) {
-  var current_time = new Date().toLocaleString('en-US', { timeZone: 'Europe/Budapest', hour12: false});
+  var current_time = new Date().toLocaleString('en-US', { timeZone: 'Indian/Maldives', hour12: false});
   //15:13:27
   var current_time_value  = current_time.substring(current_time.length-8,current_time.length-6) * 60;
   current_time_value += current_time.substring(current_time.length-5,current_time.length-3)*1;
@@ -101,6 +91,7 @@ function notDeparted(flight_time) {
   //Time: 0805    
   var flight_time_value = flight_time.substring(0,2) * 60 + flight_time.substring(2,4)*1;
   var result = (flight_time_value > current_time_value);
+  
   return (result);
 }
 
@@ -133,7 +124,8 @@ function prepareInterviewData() {
   quota_data.length = 0;
   for (i = 0; i < quota_data_temp.length; i++) {
     if ((quota_data_temp[i].Quota>0)
-         && (quota_data_temp[i].Quarter == currentQuarter))
+        // && (quota_data_temp[i].Quarter == currentQuarter)
+        )
     {
       quota_data.push(quota_data_temp[i]);
     }
@@ -198,18 +190,21 @@ function prepareInterviewData() {
     flight.Airport_Airline = airport_airline;
 
     //only get today & not departed flight
-    if (((currentDate ==flight.Date) && notDeparted(flight.Time))
-        || (nextDate ==flight.Date)
-        ) 
+    if ((currentDate <= flight.Effective_end)
+        && (currentDate >= flight.Effective_start)
+        && (currentDayOfWeek == flight.day_of_week)
+        && notDeparted(flight.Time)
+        )      
     { 
-      flight.Date_Time = flight.Date.substring(6,10) + "-" +  flight.Date.substring(3,5) + "-" + flight.Date.substring(0,2) + " " + flight.Time;
+      flight.Date_Time =currentDate; //flight.Date.substring(6,10) + "-" +  flight.Date.substring(3,5) + "-" + flight.Date.substring(0,2) + " " + flight.Time;
       //flight.Date_Time = flight.Time;
       today_flight_list.push(flight);
     }
     
     //currentMonth: 02-2023
     //flight.Date: 08-02-2023
-    if (currentQuarter ==  getQuarterFromMonth(flight.Date.substring(3,5), flight.Date.substring(6,10))) { 
+    //if (currentQuarter ==  getQuarterFromMonth(flight.Date.substring(3,5), flight.Date.substring(6,10))) 
+    { 
       this_month_flight_list.push(flight);
     }		   
   }
@@ -222,12 +217,16 @@ function prepareInterviewData() {
     let flight = today_flight_list[i];
     for (j = 0; j < quota_data.length; j++) {
       let quota = quota_data[j];
-      if ((quota.Airport_Airline == flight.Airport_Airline) && (quota.Quota>0))
+      if ((quota.quota_id == flight.Airport_Airline) && (quota.Quota>0))
       {
         flight.Quota = quota.Quota;
         daily_plan_data.push(flight);
+
        }
     }
   }
-   //console.log("today_flight_list: ", today_flight_list);
+ console.log("daily_plan_data: ", daily_plan_data);
+  
+  console.log("quota_data: ", quota_data);
+  
 }

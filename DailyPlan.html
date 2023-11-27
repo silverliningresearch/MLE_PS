@@ -4,7 +4,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   
 		<script src="data/quota_data.js"></script>
-		<script src="data/BUD_flight_list.js"></script>
+		<script src="data/MLE_departures_flight_list.js"></script>
     <script src="data/invalid_cases.js"></script>
     <script src="scripts/PrepareData.js"></script>
 		<script src="scripts/CalculateData.js"></script>
@@ -69,9 +69,6 @@
         data.addColumn('string', 'Time');
         data.addColumn('string', 'Flight');
         data.addColumn('string', 'To');
-        data.addColumn('string', 'Schengen');
-        //data.addColumn('string', 'DOOP');
-        data.addColumn('number', 'Remaining Flights');
         data.addColumn('number', 'Quota');
         data.addColumn('number', 'Completed');
 				data.addColumn('number', 'Missing');
@@ -83,10 +80,9 @@
         for (i = 0; i < daily_plan_data.length; i++) {
           var row = daily_plan_data[i];
             { 
-                data.addRows([[row.Date_Time, 
-                row.Flight, row.DestName,  row.Schengen,
-                //row.doop, 
-                Number(row.remaining_flights), 
+                data.addRows([[
+                row.Time, 
+                row.Flight, row.DestName,  
                 Number(row.Quota), Number(row.Completed), Number(row.Difference), 
                 Number(row.Difference_percent), 
                 Number(row.Prioritisation_score), 
@@ -114,10 +110,10 @@
 
         //create fiter
         var options = {
-          'filterColumnLabel': 'Schengen',
+          'filterColumnLabel': 'To',
           "ui": {"label": "", 
                 "labelStacking": 'horizotal',
-                "caption": "Filter by Schengen/Non-Schengen",
+                "caption": "Filter by Destination",
                 }
         };
         

@@ -6,16 +6,12 @@ var flightForInterview;
 function getToDate() {
   var d = new Date();
       
-  month = '' + (d.getMonth() + 1),
-  day = '' + d.getDate(),
+  month = (d.getMonth() + 1),
+  day =  d.getDate(),
   year = d.getFullYear();
+  currentDayOfWeek = d.getDay();
 
-  if (month.length < 2) 
-      month = '0' + month;
-  if (day.length < 2) 
-      day = '0' + day;
-
-  return [day, month,year].join('-');
+  return (year*10000 +  month*100 + day);
 }
 
 function is_gate_valid (gate_zone, Schengen) {
@@ -71,13 +67,19 @@ function load_flight_list() {
   flightShortList = [];
   flightShortList.length = 0;
 
+  var today = getToDate();
+
   for (i = 0; i < flightRawList.length; i++) {
     var flight = flightRawList[i];
-    if ((flight.Date == getToDate() && notDeparted_flight_search(flight.Time)) //today flight && departure
-    ) 
+
+    if ((today <= flight.Effective_end)
+        && (today >= flight.Effective_start)
+        && (currentDayOfWeek == flight.day_of_week)
+        && notDeparted_flight_search(flight.Time)
+        ) //not departure
     {
       {
-        var Date = '"Date"' + ":" + '"' +  flightRawList[i].Date + '", ';
+        var Date = '"Date"' + ":" + '"' +  today + '", ';
         var Time = '"Time"' + ":" + '"' +  flightRawList[i].Time + '", ';
         var Flight = '"Flight"' + ":" + '"' +  flightRawList[i].Flight + '", ';
         var Airline = '"Airline"' + ":" + '"' +  flightRawList[i].Airline + '", '; //name
@@ -105,6 +107,7 @@ function load_flight_list() {
       }
     }
   }
+
 }
 
 function update_drop_box_list() {
@@ -117,20 +120,17 @@ function update_drop_box_list() {
 
   input = input.toLowerCase();
 
+  var today = getToDate();
+ 
   var count = 0;
   for (i = 0; i < flightList.length; i++) {
     let flight = flightList[i];
-    var today = getToDate();
-    
-    if (today == flight.Date)
-    { 
-      if (flight.Show.toLowerCase().includes(input)) {
-        const elem = document.createElement("option");
-        elem.value = flight.Show;
-        searchList.appendChild(elem);
-        flightShortList.push(flight);
-        count++;
-      }
+    if (flight.Show.toLowerCase().includes(input)) {
+      const elem = document.createElement("option");
+      elem.value = flight.Show;
+      searchList.appendChild(elem);
+      flightShortList.push(flight);
+      count++;
     }
     
     if (count > 10) {

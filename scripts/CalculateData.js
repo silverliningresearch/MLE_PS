@@ -1,7 +1,7 @@
 /************************************/
 function CalculateAirportAirLineReport() {
   prepareInterviewData();
-  CalculateDOOP(); //add DOOP to flight list
+ //CalculateDOOP(); //add DOOP to flight list
   var daily_plan_data_temp;
   daily_plan_data_temp = [];
   daily_plan_data_temp.length = 0;
@@ -18,7 +18,7 @@ function CalculateAirportAirLineReport() {
     found_temp = 0;
     for (j = 0; j < quota_data.length; j++) 
     {
-      if (quota_data[j].Airport_Airline.toUpperCase() == interview_data[i].Airport_Airline.toUpperCase()) 
+      if (quota_data[j].quota_id.toUpperCase() == interview_data[i].Airport_Airline.toUpperCase()) 
       { 
         found_temp = 1;
       }
@@ -61,7 +61,7 @@ function CalculateAirportAirLineReport() {
   for (i = 0; i < daily_plan_data.length; i++) {//airport_airline_report.length;
     row = daily_plan_data[i];
     for (j = 0; j < quota_data.length; j++) {
-      if (row.Airport_Airline.toUpperCase() == quota_data[j].Airport_Airline.toUpperCase()) 
+      if (row.Airport_Airline.toUpperCase() == quota_data[j].quota_id.toUpperCase()) 
       {
         if ( quota_data[j].Difference < 0) {
           row.remaining_flights = quota_data[j].remaining_flights;
@@ -142,7 +142,8 @@ function CalculateDOOP() {
       if (quota_data[i].Airport_Airline.toUpperCase() == this_month_flight_list[j].Airport_Airline.toUpperCase()) 
       {
         //get remaining_flights
-        if (isNotThePastDate(this_month_flight_list[j].Date)) {
+        if (isNotThePastDate(this_month_flight_list[j].Date)) 
+        {
           remaining_flights++;
         }
 

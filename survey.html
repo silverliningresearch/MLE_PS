@@ -96,7 +96,9 @@
                   selected_language = current_language;
                   break;         
               }
-              //api.fn.changeLanguage(selected_language);
+              
+              selected_language = "en";
+              api.fn.changeLanguage(selected_language);
             }
         };          
           api.events.subscribe('next', listSearchHandler);

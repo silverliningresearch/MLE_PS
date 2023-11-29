@@ -62,8 +62,43 @@
               api.fn.answers({urlVar03: urlVar03});
               api.fn.answers({urlVar04: urlVar04});
             }
-          };
 
+
+            if ((api.fn.getCurrentPageIndex()==1) ||
+                (api.fn.getCurrentPageIndex()==3)) 
+            {
+              var current_language = api.fn.getCurrentLanguage()	;
+              var selected_language = current_language;
+
+              switch (api.fn.answers().Core_Q5) {
+                case 1:
+                  selected_language = "en";
+                  break;
+                case 2:
+                  selected_language = "id"; //Indonesia, use as the place holder for Dhivehi
+                  break;                                                    
+                case 3:
+                  selected_language = "fr";
+                  break;
+                case 4:
+                  selected_language = "de";
+                  break;                  
+                case 5:
+                  selected_language = "ar";
+                  break;                  
+                case 6:
+                  selected_language = "zh-hans";
+                  break;                  
+                case 7:
+                  selected_language = "ru";
+                  break;                  
+                default:
+                  selected_language = current_language;
+                  break;         
+              }
+              //api.fn.changeLanguage(selected_language);
+            }
+        };          
           api.events.subscribe('next', listSearchHandler);
           api.events.subscribe('back', listSearchHandler);
           api.events.subscribe('startedOrContinued', listSearchHandler);

@@ -57,6 +57,7 @@
 
         //define header
         data.addColumn('string', 'Flight');
+        data.addColumn('string', 'To');
         //data.addColumn('number', 'DOOP');
         data.addColumn('string', 'Day of week');
         data.addColumn('number', 'Quota');
@@ -70,6 +71,7 @@
           data.addRows([
           [
             row.Flight, 
+            row.DestName,
             //row.DOOP, 
             row.day_of_week_name,
             Number(row.Quota),
@@ -108,7 +110,7 @@
         dashboard.bind(tableFilter, tableChart);
 
         var view = new google.visualization.DataView(data);
-        document.getElementById("filter_div").style.display = "none";
+        //document.getElementById("filter_div").style.display = "none";
         dashboard.draw(view);
 
         //Update time info
@@ -134,11 +136,13 @@
         <option value="2023-Q4">2023-Q4          
       </select>
     </div>
-    <br>
+
 
     <div id="dashboard_div">
       <!--Divs that will hold each control and chart-->
+      <br>
       <div id="filter_div"></div>
+      <br>
       <div id="table_div"></div>
     </div>
 

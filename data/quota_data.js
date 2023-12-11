@@ -1,394 +1,3284 @@
-let airport_airline_quota = ` 
+let quota_info = `  
 [
  {
-  "quota_id": "TFU-3U",
-  "Quota": 24,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-3U3923",
+  "Quota": 1,
+  "Flight": "3U3923",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "FRA-4Y",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-5W7105",
+  "Quota": 4,
+  "Flight": "5W7105",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "AUH-5W",
-  "Quota": 14,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-6E1127",
+  "Quota": 4,
+  "Flight": "6E1127",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "BLR-6E",
-  "Quota": 14,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-6E1131",
+  "Quota": 4,
+  "Flight": "6E1131",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "BOM-6E",
-  "Quota": 14,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-6E1133",
+  "Quota": 4,
+  "Flight": "6E1133",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "COK-6E",
-  "Quota": 14,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-8D813",
+  "Quota": 3,
+  "Flight": "8D813",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "DEL-6E",
+  "quota_id": "0-AI1265",
+  "Quota": 3,
+  "Flight": "AI1265",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-AK072",
+  "Quota": 3,
+  "Flight": "AK072",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-AK074",
+  "Quota": 3,
+  "Flight": "AK074",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-AZ776",
+  "Quota": 4,
+  "Flight": "AZ776",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-BA061",
+  "Quota": 5,
+  "Flight": "BA061",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-BS337",
+  "Quota": 3,
+  "Flight": "BS337",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-C65531",
+  "Quota": 3,
+  "Flight": "C65531",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-EK652",
   "Quota": 6,
-  "Year": "2023",
-  "Month": "12"
+  "Flight": "EK652",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "HYD-6E",
-  "Quota": 5,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "CMB-8D",
-  "Quota": 13,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "BLR-AI",
-  "Quota": 8,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "BOM-AI",
-  "Quota": 5,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "KUL-AK",
-  "Quota": 26,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "FCO-AZ",
-  "Quota": 16,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "DWC-B4",
-  "Quota": 4,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "HAN-B4",
-  "Quota": 2,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "RUH-B4",
-  "Quota": 4,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "LHR-BA",
-  "Quota": 21,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "DAC-BS",
-  "Quota": 10,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "TAS-C6",
-  "Quota": 1,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "LCA-CY",
-  "Quota": 1,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "FRA-DE",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "CMB-EK",
-  "Quota": 23,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "DXB-EK",
-  "Quota": 116,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "AUH-EY",
-  "Quota": 50,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "CMB-EY",
-  "Quota": 18,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "DMK-FD",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "CMB-FZ",
-  "Quota": 10,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "DXB-FZ",
-  "Quota": 43,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "BAH-GF",
-  "Quota": 10,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "CMB-GF",
-  "Quota": 10,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "HKG-HX",
-  "Quota": 13,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "TAS-HY",
-  "Quota": 1,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "BLR-IX",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "BOM-IX",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "COK-IX",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "PKX-JD",
-  "Quota": 42,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "ALA-KC",
-  "Quota": 28,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "WAW-LO",
-  "Quota": 5,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "PVG-MU",
-  "Quota": 32,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "OTP-N4",
-  "Quota": 2,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "FCO-NO",
+  "quota_id": "0-EK653",
   "Quota": 6,
-  "Year": "2023",
-  "Month": "12"
+  "Flight": "EK653",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "MXP-NO",
-  "Quota": 19,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-EK656",
+  "Quota": 6,
+  "Flight": "EK656",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "KUL-OD",
-  "Quota": 18,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-EK658",
+  "Quota": 6,
+  "Flight": "EK658",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "VIE-OS",
-  "Quota": 14,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-EK660",
+  "Quota": 6,
+  "Flight": "EK660",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "BKK-PG",
-  "Quota": 4,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-EK662",
+  "Quota": 6,
+  "Flight": "EK662",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "BLR-Q2",
-  "Quota": 2,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "COK-Q2",
+  "quota_id": "0-EY278",
   "Quota": 5,
-  "Year": "2023",
-  "Month": "12"
+  "Flight": "EY278",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "DAC-Q2",
+  "quota_id": "0-FD175",
+  "Quota": 3,
+  "Flight": "FD175",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-FZ1025",
+  "Quota": 3,
+  "Flight": "FZ1025",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-FZ1026",
+  "Quota": 3,
+  "Flight": "FZ1026",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-FZ1207",
+  "Quota": 3,
+  "Flight": "FZ1207",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-FZ1353",
+  "Quota": 3,
+  "Flight": "FZ1353",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-FZ1569",
+  "Quota": 3,
+  "Flight": "FZ1569",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-GF144",
+  "Quota": 3,
+  "Flight": "GF144",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-GF145",
+  "Quota": 3,
+  "Flight": "GF145",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-HY3525",
   "Quota": 2,
-  "Year": "2023",
-  "Month": "12"
+  "Flight": "HY3525",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "TRV-Q2",
-  "Quota": 5,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "DOH-QR",
-  "Quota": 89,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "PRG-QS",
+  "quota_id": "0-IX662",
   "Quota": 1,
-  "Year": "2023",
-  "Month": "12"
+  "Flight": "IX662",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "BOM-SG",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-IX664",
+  "Quota": 1,
+  "Flight": "IX664",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "COK-SG",
-  "Quota": 5,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-IX666",
+  "Quota": 1,
+  "Flight": "IX666",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "SIN-SQ",
-  "Quota": 31,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-KC585",
+  "Quota": 3,
+  "Flight": "KC585",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "SVO-SU",
-  "Quota": 44,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-MU235",
+  "Quota": 4,
+  "Flight": "MU235",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "RUH-SV",
-  "Quota": 5,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "CMB-TK",
+  "quota_id": "0-N48583",
   "Quota": 2,
-  "Year": "2023",
-  "Month": "12"
+  "Flight": "N48583",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "IST-TK",
-  "Quota": 21,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "BOM-UK",
-  "Quota": 10,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "DEL-UK",
-  "Quota": 10,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "CMB-UL",
-  "Quota": 57,
-  "Year": "2023",
-  "Month": "12"
- },
- {
-  "quota_id": "LHR-VS",
+  "quota_id": "0-NO510",
   "Quota": 9,
-  "Year": "2023",
-  "Month": "12"
+  "Flight": "NO510",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "ZRH-WK",
-  "Quota": 11,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-OD293",
+  "Quota": 3,
+  "Flight": "OD293",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "MCT-WY",
-  "Quota": 8,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-OD295",
+  "Quota": 3,
+  "Flight": "OD295",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "VKO-ZF",
-  "Quota": 27,
-  "Year": "2023",
-  "Month": "12"
+  "quota_id": "0-OS045",
+  "Quota": 5,
+  "Flight": "OS045",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-Q2701",
+  "Quota": 2,
+  "Flight": "Q2701",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-Q2707",
+  "Quota": 2,
+  "Flight": "Q2707",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-QR 670",
+  "Quota": 2,
+  "Flight": "QR 670",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-QR 672",
+  "Quota": 7,
+  "Flight": "QR 672",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-QR 674",
+  "Quota": 7,
+  "Flight": "QR 674",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-QR 676",
+  "Quota": 7,
+  "Flight": "QR 676",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-SG091",
+  "Quota": 1,
+  "Flight": "SG091",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-SG4081",
+  "Quota": 3,
+  "Flight": "SG4081",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-SQ432",
+  "Quota": 2,
+  "Flight": "SQ432",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-SQ438",
+  "Quota": 5,
+  "Flight": "SQ438",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-SU320",
+  "Quota": 6,
+  "Flight": "SU320",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-SU324",
+  "Quota": 6,
+  "Flight": "SU324",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-TK734",
+  "Quota": 5,
+  "Flight": "TK734",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-UK271",
+  "Quota": 3,
+  "Flight": "UK271",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-UK273",
+  "Quota": 3,
+  "Flight": "UK273",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-UL101",
+  "Quota": 5,
+  "Flight": "UL101",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-UL103",
+  "Quota": 5,
+  "Flight": "UL103",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-UL115",
+  "Quota": 5,
+  "Flight": "UL115",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-VS384",
+  "Quota": 4,
+  "Flight": "VS384",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-WY381",
+  "Quota": 3,
+  "Flight": "WY381",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-WY383",
+  "Quota": 3,
+  "Flight": "WY383",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-ZF701",
+  "Quota": 4,
+  "Flight": "ZF701",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-ZF7111",
+  "Quota": 1,
+  "Flight": "ZF7111",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-4Y154",
+  "Quota": 5,
+  "Flight": "4Y154",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-5W7105",
+  "Quota": 4,
+  "Flight": "5W7105",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-6E1127",
+  "Quota": 4,
+  "Flight": "6E1127",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-6E1131",
+  "Quota": 4,
+  "Flight": "6E1131",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-6E1133",
+  "Quota": 4,
+  "Flight": "6E1133",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-6E1809",
+  "Quota": 3,
+  "Flight": "6E1809",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-8D811",
+  "Quota": 3,
+  "Flight": "8D811",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-AI1265",
+  "Quota": 3,
+  "Flight": "AI1265",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-AK072",
+  "Quota": 3,
+  "Flight": "AK072",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-AK074",
+  "Quota": 4,
+  "Flight": "AK074",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-AZ776",
+  "Quota": 4,
+  "Flight": "AZ776",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-BA061",
+  "Quota": 5,
+  "Flight": "BA061",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-BS337",
+  "Quota": 3,
+  "Flight": "BS337",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-CY812",
+  "Quota": 2,
+  "Flight": "CY812",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-DE2320",
+  "Quota": 5,
+  "Flight": "DE2320",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EK652",
+  "Quota": 6,
+  "Flight": "EK652",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EK653",
+  "Quota": 6,
+  "Flight": "EK653",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EK656",
+  "Quota": 6,
+  "Flight": "EK656",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EK658",
+  "Quota": 6,
+  "Flight": "EK658",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EK660",
+  "Quota": 6,
+  "Flight": "EK660",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EK662",
+  "Quota": 6,
+  "Flight": "EK662",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EY 260",
+  "Quota": 2,
+  "Flight": "EY 260",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-EY278",
+  "Quota": 5,
+  "Flight": "EY278",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-FD175",
+  "Quota": 3,
+  "Flight": "FD175",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-FZ1025",
+  "Quota": 3,
+  "Flight": "FZ1025",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-FZ1026",
+  "Quota": 3,
+  "Flight": "FZ1026",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-FZ1207",
+  "Quota": 3,
+  "Flight": "FZ1207",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-FZ1353",
+  "Quota": 3,
+  "Flight": "FZ1353",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-FZ1569",
+  "Quota": 3,
+  "Flight": "FZ1569",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-GF144",
+  "Quota": 3,
+  "Flight": "GF144",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-GF145",
+  "Quota": 3,
+  "Flight": "GF145",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-IX662",
+  "Quota": 1,
+  "Flight": "IX662",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-IX664",
+  "Quota": 1,
+  "Flight": "IX664",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-IX666",
+  "Quota": 1,
+  "Flight": "IX666",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-JD455",
+  "Quota": 4,
+  "Flight": "JD455",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-KC585",
+  "Quota": 3,
+  "Flight": "KC585",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-MU235",
+  "Quota": 4,
+  "Flight": "MU235",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-NO610",
+  "Quota": 6,
+  "Flight": "NO610",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-OD293",
+  "Quota": 6,
+  "Flight": "OD293",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-PG711",
+  "Quota": 2,
+  "Flight": "PG711",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-Q2701",
+  "Quota": 2,
+  "Flight": "Q2701",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-Q2707",
+  "Quota": 2,
+  "Flight": "Q2707",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-QR 670",
+  "Quota": 2,
+  "Flight": "QR 670",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-QR 672",
+  "Quota": 7,
+  "Flight": "QR 672",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-QR 674",
+  "Quota": 7,
+  "Flight": "QR 674",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-QR 676",
+  "Quota": 7,
+  "Flight": "QR 676",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-SG091",
+  "Quota": 1,
+  "Flight": "SG091",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-SG4081",
+  "Quota": 3,
+  "Flight": "SG4081",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-SQ432",
+  "Quota": 2,
+  "Flight": "SQ432",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-SQ438",
+  "Quota": 5,
+  "Flight": "SQ438",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-SU320",
+  "Quota": 6,
+  "Flight": "SU320",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-SU324",
+  "Quota": 6,
+  "Flight": "SU324",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-TK734",
+  "Quota": 5,
+  "Flight": "TK734",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-UK271",
+  "Quota": 3,
+  "Flight": "UK271",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-UK273",
+  "Quota": 3,
+  "Flight": "UK273",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-UL101",
+  "Quota": 5,
+  "Flight": "UL101",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-UL103",
+  "Quota": 5,
+  "Flight": "UL103",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-UL115",
+  "Quota": 5,
+  "Flight": "UL115",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-WK066",
+  "Quota": 5,
+  "Flight": "WK066",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-WY381",
+  "Quota": 3,
+  "Flight": "WY381",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-ZF701",
+  "Quota": 5,
+  "Flight": "ZF701",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-ZF7111",
+  "Quota": 1,
+  "Flight": "ZF7111",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-5W7105",
+  "Quota": 4,
+  "Flight": "5W7105",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-6E1127",
+  "Quota": 4,
+  "Flight": "6E1127",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-6E1131",
+  "Quota": 4,
+  "Flight": "6E1131",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-6E1133",
+  "Quota": 4,
+  "Flight": "6E1133",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-6E1809",
+  "Quota": 3,
+  "Flight": "6E1809",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-8D811",
+  "Quota": 3,
+  "Flight": "8D811",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-8D813",
+  "Quota": 3,
+  "Flight": "8D813",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-AI1265",
+  "Quota": 3,
+  "Flight": "AI1265",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-AI1267",
+  "Quota": 3,
+  "Flight": "AI1267",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-AK072",
+  "Quota": 3,
+  "Flight": "AK072",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-AK074",
+  "Quota": 1,
+  "Flight": "AK074",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-AZ776",
+  "Quota": 5,
+  "Flight": "AZ776",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-BA061",
+  "Quota": 5,
+  "Flight": "BA061",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-BS337",
+  "Quota": 3,
+  "Flight": "BS337",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EK652",
+  "Quota": 6,
+  "Flight": "EK652",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EK653",
+  "Quota": 6,
+  "Flight": "EK653",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EK656",
+  "Quota": 6,
+  "Flight": "EK656",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EK658",
+  "Quota": 6,
+  "Flight": "EK658",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EK660",
+  "Quota": 6,
+  "Flight": "EK660",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EK662",
+  "Quota": 6,
+  "Flight": "EK662",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EY 260",
+  "Quota": 1,
+  "Flight": "EY 260",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EY278",
+  "Quota": 5,
+  "Flight": "EY278",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-FD175",
+  "Quota": 3,
+  "Flight": "FD175",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-FZ1025",
+  "Quota": 3,
+  "Flight": "FZ1025",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-FZ1026",
+  "Quota": 3,
+  "Flight": "FZ1026",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-FZ1207",
+  "Quota": 3,
+  "Flight": "FZ1207",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-FZ1353",
+  "Quota": 3,
+  "Flight": "FZ1353",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-FZ1569",
+  "Quota": 3,
+  "Flight": "FZ1569",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-GF144",
+  "Quota": 3,
+  "Flight": "GF144",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-GF145",
+  "Quota": 3,
+  "Flight": "GF145",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-IX662",
+  "Quota": 1,
+  "Flight": "IX662",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-IX664",
+  "Quota": 1,
+  "Flight": "IX664",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-IX666",
+  "Quota": 1,
+  "Flight": "IX666",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-JD455",
+  "Quota": 2,
+  "Flight": "JD455",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-MU235",
+  "Quota": 4,
+  "Flight": "MU235",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-OD293",
+  "Quota": 3,
+  "Flight": "OD293",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-OS045",
+  "Quota": 5,
+  "Flight": "OS045",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-PG711",
+  "Quota": 2,
+  "Flight": "PG711",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-Q2707",
+  "Quota": 2,
+  "Flight": "Q2707",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-Q2733",
+  "Quota": 2,
+  "Flight": "Q2733",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-QR 670",
+  "Quota": 2,
+  "Flight": "QR 670",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-QR 672",
+  "Quota": 7,
+  "Flight": "QR 672",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-QR 674",
+  "Quota": 7,
+  "Flight": "QR 674",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-QR 676",
+  "Quota": 7,
+  "Flight": "QR 676",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-SG091",
+  "Quota": 1,
+  "Flight": "SG091",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-SG4081",
+  "Quota": 3,
+  "Flight": "SG4081",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-SQ432",
+  "Quota": 2,
+  "Flight": "SQ432",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-SQ438",
+  "Quota": 5,
+  "Flight": "SQ438",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-SU320",
+  "Quota": 6,
+  "Flight": "SU320",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-SV838",
+  "Quota": 5,
+  "Flight": "SV838",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-TK734",
+  "Quota": 5,
+  "Flight": "TK734",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-UK271",
+  "Quota": 3,
+  "Flight": "UK271",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-UK273",
+  "Quota": 3,
+  "Flight": "UK273",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-UL101",
+  "Quota": 5,
+  "Flight": "UL101",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-UL103",
+  "Quota": 5,
+  "Flight": "UL103",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-UL115",
+  "Quota": 5,
+  "Flight": "UL115",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-VS384",
+  "Quota": 4,
+  "Flight": "VS384",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-ZF701",
+  "Quota": 5,
+  "Flight": "ZF701",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-ZF7111",
+  "Quota": 1,
+  "Flight": "ZF7111",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-5W7105",
+  "Quota": 4,
+  "Flight": "5W7105",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-6E1127",
+  "Quota": 4,
+  "Flight": "6E1127",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-6E1131",
+  "Quota": 4,
+  "Flight": "6E1131",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-6E1133",
+  "Quota": 4,
+  "Flight": "6E1133",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-8D813",
+  "Quota": 3,
+  "Flight": "8D813",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-AI1267",
+  "Quota": 3,
+  "Flight": "AI1267",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-AK072",
+  "Quota": 3,
+  "Flight": "AK072",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-AK074",
+  "Quota": 3,
+  "Flight": "AK074",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-AZ776",
+  "Quota": 4,
+  "Flight": "AZ776",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-BA061",
+  "Quota": 5,
+  "Flight": "BA061",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-BS337",
+  "Quota": 3,
+  "Flight": "BS337",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-DE2320",
+  "Quota": 5,
+  "Flight": "DE2320",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-EK652",
+  "Quota": 6,
+  "Flight": "EK652",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-EK653",
+  "Quota": 6,
+  "Flight": "EK653",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-EK656",
+  "Quota": 6,
+  "Flight": "EK656",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-EK658",
+  "Quota": 6,
+  "Flight": "EK658",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-EK660",
+  "Quota": 6,
+  "Flight": "EK660",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-EK662",
+  "Quota": 6,
+  "Flight": "EK662",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-EY278",
+  "Quota": 5,
+  "Flight": "EY278",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-FD175",
+  "Quota": 3,
+  "Flight": "FD175",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-FZ1025",
+  "Quota": 3,
+  "Flight": "FZ1025",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-FZ1026",
+  "Quota": 3,
+  "Flight": "FZ1026",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-FZ1207",
+  "Quota": 3,
+  "Flight": "FZ1207",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-FZ1353",
+  "Quota": 3,
+  "Flight": "FZ1353",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-FZ1569",
+  "Quota": 3,
+  "Flight": "FZ1569",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-GF144",
+  "Quota": 3,
+  "Flight": "GF144",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-GF145",
+  "Quota": 3,
+  "Flight": "GF145",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-IX662",
+  "Quota": 1,
+  "Flight": "IX662",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-IX664",
+  "Quota": 1,
+  "Flight": "IX664",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-IX666",
+  "Quota": 1,
+  "Flight": "IX666",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-MU235",
+  "Quota": 4,
+  "Flight": "MU235",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-NO110",
+  "Quota": 6,
+  "Flight": "NO110",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-OD293",
+  "Quota": 3,
+  "Flight": "OD293",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-OD295",
+  "Quota": 3,
+  "Flight": "OD295",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-OS045",
+  "Quota": 5,
+  "Flight": "OS045",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-Q2503",
+  "Quota": 2,
+  "Flight": "Q2503",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-QR 670",
+  "Quota": 2,
+  "Flight": "QR 670",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-QR 672",
+  "Quota": 7,
+  "Flight": "QR 672",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-QR 674",
+  "Quota": 7,
+  "Flight": "QR 674",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-QR 676",
+  "Quota": 7,
+  "Flight": "QR 676",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-SG091",
+  "Quota": 1,
+  "Flight": "SG091",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-SG4081",
+  "Quota": 3,
+  "Flight": "SG4081",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-SQ432",
+  "Quota": 2,
+  "Flight": "SQ432",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-SQ438",
+  "Quota": 5,
+  "Flight": "SQ438",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-SU320",
+  "Quota": 6,
+  "Flight": "SU320",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-TK734",
+  "Quota": 5,
+  "Flight": "TK734",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-UK271",
+  "Quota": 3,
+  "Flight": "UK271",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-UK273",
+  "Quota": 3,
+  "Flight": "UK273",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-UL101",
+  "Quota": 5,
+  "Flight": "UL101",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-UL103",
+  "Quota": 5,
+  "Flight": "UL103",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-UL115",
+  "Quota": 5,
+  "Flight": "UL115",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-WK066",
+  "Quota": 5,
+  "Flight": "WK066",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-ZF701",
+  "Quota": 4,
+  "Flight": "ZF701",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-ZF7111",
+  "Quota": 1,
+  "Flight": "ZF7111",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-4Y154",
+  "Quota": 5,
+  "Flight": "4Y154",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-5W7105",
+  "Quota": 4,
+  "Flight": "5W7105",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-6E1127",
+  "Quota": 4,
+  "Flight": "6E1127",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-6E1131",
+  "Quota": 4,
+  "Flight": "6E1131",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-6E1133",
+  "Quota": 4,
+  "Flight": "6E1133",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-6E1809",
+  "Quota": 3,
+  "Flight": "6E1809",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-8D811",
+  "Quota": 3,
+  "Flight": "8D811",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-AI1265",
+  "Quota": 3,
+  "Flight": "AI1265",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-AI1267",
+  "Quota": 3,
+  "Flight": "AI1267",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-AK072",
+  "Quota": 3,
+  "Flight": "AK072",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-AK074",
+  "Quota": 1,
+  "Flight": "AK074",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-BA061",
+  "Quota": 5,
+  "Flight": "BA061",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-BS337",
+  "Quota": 3,
+  "Flight": "BS337",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EK652",
+  "Quota": 6,
+  "Flight": "EK652",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EK653",
+  "Quota": 6,
+  "Flight": "EK653",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EK656",
+  "Quota": 6,
+  "Flight": "EK656",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EK658",
+  "Quota": 6,
+  "Flight": "EK658",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EK660",
+  "Quota": 6,
+  "Flight": "EK660",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EK662",
+  "Quota": 6,
+  "Flight": "EK662",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EY 260",
+  "Quota": 1,
+  "Flight": "EY 260",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-EY278",
+  "Quota": 5,
+  "Flight": "EY278",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-FD175",
+  "Quota": 3,
+  "Flight": "FD175",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-FZ1025",
+  "Quota": 3,
+  "Flight": "FZ1025",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-FZ1026",
+  "Quota": 3,
+  "Flight": "FZ1026",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-FZ1207",
+  "Quota": 3,
+  "Flight": "FZ1207",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-FZ1353",
+  "Quota": 3,
+  "Flight": "FZ1353",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-FZ1569",
+  "Quota": 3,
+  "Flight": "FZ1569",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-GF144",
+  "Quota": 3,
+  "Flight": "GF144",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-GF145",
+  "Quota": 3,
+  "Flight": "GF145",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-IX662",
+  "Quota": 1,
+  "Flight": "IX662",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-IX664",
+  "Quota": 1,
+  "Flight": "IX664",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-IX666",
+  "Quota": 1,
+  "Flight": "IX666",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-JD455",
+  "Quota": 4,
+  "Flight": "JD455",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-MU235",
+  "Quota": 3,
+  "Flight": "MU235",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-OD293",
+  "Quota": 3,
+  "Flight": "OD293",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-PG711",
+  "Quota": 2,
+  "Flight": "PG711",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-Q2701",
+  "Quota": 2,
+  "Flight": "Q2701",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-Q2707",
+  "Quota": 2,
+  "Flight": "Q2707",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-QR 670",
+  "Quota": 2,
+  "Flight": "QR 670",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-QR 672",
+  "Quota": 7,
+  "Flight": "QR 672",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-QR 674",
+  "Quota": 7,
+  "Flight": "QR 674",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-QR 676",
+  "Quota": 7,
+  "Flight": "QR 676",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-SG091",
+  "Quota": 1,
+  "Flight": "SG091",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-SG4081",
+  "Quota": 3,
+  "Flight": "SG4081",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-SQ432",
+  "Quota": 2,
+  "Flight": "SQ432",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-SQ438",
+  "Quota": 5,
+  "Flight": "SQ438",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-SU320",
+  "Quota": 6,
+  "Flight": "SU320",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-SU324",
+  "Quota": 6,
+  "Flight": "SU324",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-TK734",
+  "Quota": 5,
+  "Flight": "TK734",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-UK271",
+  "Quota": 3,
+  "Flight": "UK271",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-UK273",
+  "Quota": 3,
+  "Flight": "UK273",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-UL101",
+  "Quota": 5,
+  "Flight": "UL101",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-UL103",
+  "Quota": 5,
+  "Flight": "UL103",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-UL115",
+  "Quota": 5,
+  "Flight": "UL115",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-ZF701",
+  "Quota": 4,
+  "Flight": "ZF701",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-ZF7111",
+  "Quota": 1,
+  "Flight": "ZF7111",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-3U3923",
+  "Quota": 1,
+  "Flight": "3U3923",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-5W7105",
+  "Quota": 4,
+  "Flight": "5W7105",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-6E1127",
+  "Quota": 4,
+  "Flight": "6E1127",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-6E1131",
+  "Quota": 4,
+  "Flight": "6E1131",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-6E1133",
+  "Quota": 4,
+  "Flight": "6E1133",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-8D813",
+  "Quota": 3,
+  "Flight": "8D813",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-AI1265",
+  "Quota": 3,
+  "Flight": "AI1265",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-AK072",
+  "Quota": 3,
+  "Flight": "AK072",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-AK074",
+  "Quota": 3,
+  "Flight": "AK074",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-AZ776",
+  "Quota": 2,
+  "Flight": "AZ776",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-BA061",
+  "Quota": 5,
+  "Flight": "BA061",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-BS337",
+  "Quota": 3,
+  "Flight": "BS337",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-DE2320",
+  "Quota": 5,
+  "Flight": "DE2320",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EK652",
+  "Quota": 6,
+  "Flight": "EK652",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EK653",
+  "Quota": 6,
+  "Flight": "EK653",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EK656",
+  "Quota": 6,
+  "Flight": "EK656",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EK658",
+  "Quota": 6,
+  "Flight": "EK658",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EK660",
+  "Quota": 6,
+  "Flight": "EK660",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EK662",
+  "Quota": 6,
+  "Flight": "EK662",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EY 260",
+  "Quota": 2,
+  "Flight": "EY 260",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-EY278",
+  "Quota": 5,
+  "Flight": "EY278",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-FD175",
+  "Quota": 3,
+  "Flight": "FD175",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-FZ1025",
+  "Quota": 3,
+  "Flight": "FZ1025",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-FZ1026",
+  "Quota": 3,
+  "Flight": "FZ1026",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-FZ1207",
+  "Quota": 3,
+  "Flight": "FZ1207",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-FZ1353",
+  "Quota": 3,
+  "Flight": "FZ1353",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-FZ1569",
+  "Quota": 3,
+  "Flight": "FZ1569",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-GF144",
+  "Quota": 3,
+  "Flight": "GF144",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-GF145",
+  "Quota": 3,
+  "Flight": "GF145",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-IX662",
+  "Quota": 1,
+  "Flight": "IX662",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-IX664",
+  "Quota": 1,
+  "Flight": "IX664",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-IX666",
+  "Quota": 1,
+  "Flight": "IX666",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-LO6299",
+  "Quota": 2,
+  "Flight": "LO6299",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-MU235",
+  "Quota": 4,
+  "Flight": "MU235",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-OD293",
+  "Quota": 3,
+  "Flight": "OD293",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-OD295",
+  "Quota": 3,
+  "Flight": "OD295",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-OS045",
+  "Quota": 5,
+  "Flight": "OS045",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-Q2701",
+  "Quota": 2,
+  "Flight": "Q2701",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-Q2733",
+  "Quota": 2,
+  "Flight": "Q2733",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-QR 670",
+  "Quota": 2,
+  "Flight": "QR 670",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-QR 672",
+  "Quota": 7,
+  "Flight": "QR 672",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-QR 674",
+  "Quota": 7,
+  "Flight": "QR 674",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-QR 676",
+  "Quota": 7,
+  "Flight": "QR 676",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-SG091",
+  "Quota": 1,
+  "Flight": "SG091",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-SG4081",
+  "Quota": 3,
+  "Flight": "SG4081",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-SQ432",
+  "Quota": 2,
+  "Flight": "SQ432",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-SQ438",
+  "Quota": 5,
+  "Flight": "SQ438",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-SU320",
+  "Quota": 6,
+  "Flight": "SU320",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-TK734",
+  "Quota": 5,
+  "Flight": "TK734",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-UK271",
+  "Quota": 3,
+  "Flight": "UK271",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-UK273",
+  "Quota": 3,
+  "Flight": "UK273",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-UL101",
+  "Quota": 5,
+  "Flight": "UL101",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-UL103",
+  "Quota": 5,
+  "Flight": "UL103",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-UL115",
+  "Quota": 5,
+  "Flight": "UL115",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-VS384",
+  "Quota": 4,
+  "Flight": "VS384",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-WY383",
+  "Quota": 3,
+  "Flight": "WY383",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-ZF701",
+  "Quota": 5,
+  "Flight": "ZF701",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-ZF7111",
+  "Quota": 1,
+  "Flight": "ZF7111",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-5W7105",
+  "Quota": 4,
+  "Flight": "5W7105",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-6E1127",
+  "Quota": 4,
+  "Flight": "6E1127",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-6E1131",
+  "Quota": 4,
+  "Flight": "6E1131",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-6E1133",
+  "Quota": 4,
+  "Flight": "6E1133",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-6E1809",
+  "Quota": 3,
+  "Flight": "6E1809",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-8D811",
+  "Quota": 3,
+  "Flight": "8D811",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-AI1265",
+  "Quota": 3,
+  "Flight": "AI1265",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-AI1267",
+  "Quota": 3,
+  "Flight": "AI1267",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-AK072",
+  "Quota": 3,
+  "Flight": "AK072",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-AK074",
+  "Quota": 4,
+  "Flight": "AK074",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-AZ776",
+  "Quota": 2,
+  "Flight": "AZ776",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-BA061",
+  "Quota": 5,
+  "Flight": "BA061",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-BS337",
+  "Quota": 3,
+  "Flight": "BS337",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-DE2320",
+  "Quota": 5,
+  "Flight": "DE2320",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EK652",
+  "Quota": 6,
+  "Flight": "EK652",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EK653",
+  "Quota": 6,
+  "Flight": "EK653",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EK656",
+  "Quota": 6,
+  "Flight": "EK656",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EK658",
+  "Quota": 6,
+  "Flight": "EK658",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EK660",
+  "Quota": 6,
+  "Flight": "EK660",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EK662",
+  "Quota": 6,
+  "Flight": "EK662",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EY 260",
+  "Quota": 2,
+  "Flight": "EY 260",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EY278",
+  "Quota": 5,
+  "Flight": "EY278",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-FD175",
+  "Quota": 3,
+  "Flight": "FD175",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-FZ1025",
+  "Quota": 3,
+  "Flight": "FZ1025",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-FZ1026",
+  "Quota": 3,
+  "Flight": "FZ1026",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-FZ1207",
+  "Quota": 3,
+  "Flight": "FZ1207",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-FZ1353",
+  "Quota": 3,
+  "Flight": "FZ1353",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-FZ1569",
+  "Quota": 3,
+  "Flight": "FZ1569",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-GF144",
+  "Quota": 3,
+  "Flight": "GF144",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-GF145",
+  "Quota": 3,
+  "Flight": "GF145",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-IX662",
+  "Quota": 1,
+  "Flight": "IX662",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-IX664",
+  "Quota": 1,
+  "Flight": "IX664",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-IX666",
+  "Quota": 1,
+  "Flight": "IX666",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-JD455",
+  "Quota": 4,
+  "Flight": "JD455",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-KC585",
+  "Quota": 3,
+  "Flight": "KC585",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-MU235",
+  "Quota": 4,
+  "Flight": "MU235",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-OD293",
+  "Quota": 3,
+  "Flight": "OD293",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-PG711",
+  "Quota": 2,
+  "Flight": "PG711",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-Q2503",
+  "Quota": 2,
+  "Flight": "Q2503",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-QR 670",
+  "Quota": 2,
+  "Flight": "QR 670",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-QR 672",
+  "Quota": 7,
+  "Flight": "QR 672",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-QR 674",
+  "Quota": 7,
+  "Flight": "QR 674",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-QR 676",
+  "Quota": 7,
+  "Flight": "QR 676",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-SG091",
+  "Quota": 1,
+  "Flight": "SG091",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-SG4081",
+  "Quota": 3,
+  "Flight": "SG4081",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-SQ432",
+  "Quota": 2,
+  "Flight": "SQ432",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-SQ438",
+  "Quota": 5,
+  "Flight": "SQ438",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-SU320",
+  "Quota": 6,
+  "Flight": "SU320",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-SV838",
+  "Quota": 5,
+  "Flight": "SV838",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-TK734",
+  "Quota": 5,
+  "Flight": "TK734",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-UK271",
+  "Quota": 3,
+  "Flight": "UK271",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-UK273",
+  "Quota": 3,
+  "Flight": "UK273",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-UL101",
+  "Quota": 5,
+  "Flight": "UL101",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-UL103",
+  "Quota": 5,
+  "Flight": "UL103",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-UL115",
+  "Quota": 5,
+  "Flight": "UL115",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-WK066",
+  "Quota": 5,
+  "Flight": "WK066",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-WY381",
+  "Quota": 3,
+  "Flight": "WY381",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-WY383",
+  "Quota": 3,
+  "Flight": "WY383",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-ZF701",
+  "Quota": 4,
+  "Flight": "ZF701",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
  }
 ]    
 

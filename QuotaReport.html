@@ -8,7 +8,8 @@
     <script src="data/MLE_departures_flight_list.js"></script>
     <script src="scripts/PrepareData.js"></script>
 		<script src="scripts/CalculateData.js"></script>
-    <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_sur/BUD_Commercial/data/interview_data.js"></script> 
+    <script src="scripts/flight_search.js"></script>
+    <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_sur_v2/MLE_PS/interview_statistics.js"></script> 
 
     <style>
       .table-font {
@@ -55,8 +56,9 @@
         var data = new google.visualization.DataTable();
 
         //define header
-        data.addColumn('string', 'Airport-Airline');
+        data.addColumn('string', 'Flight');
         //data.addColumn('number', 'DOOP');
+        data.addColumn('string', 'Day of week');
         data.addColumn('number', 'Quota');
         data.addColumn('number', 'Completed');
 				data.addColumn('number', 'Missing');
@@ -67,8 +69,9 @@
           var row = quota_data[i];
           data.addRows([
           [
-            row.quota_id, 
+            row.Flight, 
             //row.DOOP, 
+            row.day_of_week_name,
             Number(row.Quota),
             Number(row.Completed), 
             Number(row.Difference), 
@@ -86,7 +89,7 @@
           'controlType': 'CategoryFilter',
           'containerId': 'filter_div',
           'options': {
-            'filterColumnLabel': 'Airport-Airline'
+            'filterColumnLabel': 'Day of week'
           }
         });
   
@@ -128,9 +131,7 @@
       <label for="year_month">Data collection period:</label>
       <select id="year_month" onchange="drawTable()">
         <option value="current-quarter">current quarter
-          <option value="2023-Q4">2023-Q4          
-        <option value="2023-Q3">2023-Q3
-        <option value="2023-Q2">2023-Q2
+        <option value="2023-Q4">2023-Q4          
       </select>
     </div>
     <br>

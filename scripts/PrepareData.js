@@ -150,7 +150,8 @@ function prepareInterviewData() {
     var interview_month = interview["InterviewDate"].substring(5,7);//"2023-04-01",
     var interview_quarter = getQuarterFromMonth(interview_month, interview_year);
 
-    if (currentQuarter == interview_quarter)
+    //MLE: get all
+    //if (currentQuarter == interview_quarter)
     {
       if (interview["quota_id"]) {
         var quota_id = '"quota_id"' + ":" + '"' +  interview["quota_id"] + '", ';

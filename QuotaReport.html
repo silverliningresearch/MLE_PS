@@ -43,6 +43,13 @@
         z-index: 10;
         font-size: 1em;
       }
+
+      .red {background-color: #f44336;;} /* Red */
+
+      .blue {background-color: #0099CC;;} /* Blue */ 
+
+      .headerbackground {background-color: #66CCFF;;} /* Blue */ 
+
     </style>
 
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -101,7 +108,7 @@
           'containerId': 'table_div',
           'options': {
             'allowHtml': true, 
-            'cssClassNames': {tableCell: 'table-font', headerRow: 'table-font', headerCell: 'googleHeaderCell' },
+            'cssClassNames': {tableCell: 'table-font', headerRow: 'headerbackground', headerCell: 'googleHeaderCell' },
             'sortColumn':  4, //{column: 2, desc: true},
             'showRowNumber': false, 'width': '100%', 'height': '100%'
           }
@@ -132,8 +139,8 @@
     <div class="year_month">
       <label for="year_month">Data collection period:</label>
       <select id="year_month" onchange="drawTable()">
-        <option value="current-quarter">current quarter
-        <option value="2023-Q4">2023-Q4          
+        <!-- <option value="current-quarter">current period-->
+        <option value="2023-Q4">11-Dec-2023 to 21-Jan-2024         
       </select>
     </div>
 

@@ -352,18 +352,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-Q2700",
+  "quota_id": "0-Q2701",
   "Quota": 2,
-  "Flight": "Q2700",
+  "Flight": "Q2701",
   "DestName": "TRV (Trivandrum International - India)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-Q2706",
+  "quota_id": "0-Q2707",
   "Quota": 2,
-  "Flight": "Q2706",
+  "Flight": "Q2707",
   "DestName": "COK (Cochin International - India)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
@@ -928,18 +928,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-Q2700",
+  "quota_id": "1-Q2701",
   "Quota": 2,
-  "Flight": "Q2700",
+  "Flight": "Q2701",
   "DestName": "TRV (Trivandrum International - India)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-Q2706",
+  "quota_id": "1-Q2707",
   "Quota": 2,
-  "Flight": "Q2706",
+  "Flight": "Q2707",
   "DestName": "COK (Cochin International - India)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
@@ -1468,18 +1468,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "2-Q2706",
+  "quota_id": "2-Q2707",
   "Quota": 2,
-  "Flight": "Q2706",
+  "Flight": "Q2707",
   "DestName": "COK (Cochin International - India)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "2-Q2732",
+  "quota_id": "2-Q2733",
   "Quota": 2,
-  "Flight": "Q2732",
+  "Flight": "Q2733",
   "DestName": "BLR (Bangalore Kempegowda International - India)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
@@ -1972,9 +1972,9 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-Q2502",
+  "quota_id": "3-Q2503",
   "Quota": 2,
-  "Flight": "Q2502",
+  "Flight": "Q2503",
   "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
@@ -2467,18 +2467,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-Q2700",
+  "quota_id": "4-Q2701",
   "Quota": 2,
-  "Flight": "Q2700",
+  "Flight": "Q2701",
   "DestName": "TRV (Trivandrum International - India)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-Q2706",
+  "quota_id": "4-Q2707",
   "Quota": 2,
-  "Flight": "Q2706",
+  "Flight": "Q2707",
   "DestName": "COK (Cochin International - India)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
@@ -2980,18 +2980,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-Q2700",
+  "quota_id": "5-Q2701",
   "Quota": 2,
-  "Flight": "Q2700",
+  "Flight": "Q2701",
   "DestName": "TRV (Trivandrum International - India)",
   "day_of_week_name": "Friday",
   "day_of_week": "5",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-Q2732",
+  "quota_id": "5-Q2733",
   "Quota": 2,
-  "Flight": "Q2732",
+  "Flight": "Q2733",
   "DestName": "BLR (Bangalore Kempegowda International - India)",
   "day_of_week_name": "Friday",
   "day_of_week": "5",
@@ -3511,9 +3511,9 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-Q2502",
+  "quota_id": "6-Q2503",
   "Quota": 2,
-  "Flight": "Q2502",
+  "Flight": "Q2503",
   "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",

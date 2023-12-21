@@ -1,10 +1,10 @@
 let quota_info = `  
 [
  {
-  "quota_id": "0-4Y155",
-  "Quota": 5,
-  "Flight": "4Y155",
-  "DestName": "FRA (Frankfurt - Germany)",
+  "quota_id": "0-3U3924",
+  "Quota": 1,
+  "Flight": "3U3924",
+  "DestName": "TFU (Chengdu Tianfu International Airport - China)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
   "Quarter": "2023-Q4"
@@ -46,18 +46,9 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-6E1814",
+  "quota_id": "0-8D814",
   "Quota": 3,
-  "Flight": "6E1814",
-  "DestName": "DEL (Delhi Indira Gandhi International - India)",
-  "day_of_week_name": "Sunday",
-  "day_of_week": "0",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "0-8D812",
-  "Quota": 3,
-  "Flight": "8D812",
+  "Flight": "8D814",
   "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
@@ -83,7 +74,7 @@ let quota_info = `
  },
  {
   "quota_id": "0-AK075",
-  "Quota": 4,
+  "Quota": 3,
   "Flight": "AK075",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Sunday",
@@ -118,19 +109,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-CY813",
-  "Quota": 2,
-  "Flight": "CY813",
-  "DestName": "LCA (Larnaca International - Cyprus)",
-  "day_of_week_name": "Sunday",
-  "day_of_week": "0",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "0-DE2321",
-  "Quota": 5,
-  "Flight": "DE2321",
-  "DestName": "FRA (Frankfurt - Germany)",
+  "quota_id": "0-C65532",
+  "Quota": 3,
+  "Flight": "C65532",
+  "DestName": "TAS (Tashkent International - Uzbekistan)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
   "Quarter": "2023-Q4"
@@ -185,15 +167,6 @@ let quota_info = `
   "Quota": 6,
   "Flight": "EK663",
   "DestName": "DXB (Dubai International - United Arab Emirates)",
-  "day_of_week_name": "Sunday",
-  "day_of_week": "0",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "0-EY 261",
-  "Quota": 2,
-  "Flight": "EY 261",
-  "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
   "Quarter": "2023-Q4"
@@ -280,6 +253,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "0-HY3526",
+  "Quota": 2,
+  "Flight": "HY3526",
+  "DestName": "TAS (Tashkent International - Uzbekistan)",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "0-IX661",
   "Quota": 1,
   "Flight": "IX661",
@@ -307,15 +289,6 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-JD456",
-  "Quota": 4,
-  "Flight": "JD456",
-  "DestName": "PKX (Beijing Daxing - China)",
-  "day_of_week_name": "Sunday",
-  "day_of_week": "0",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "0-KC586",
   "Quota": 3,
   "Flight": "KC586",
@@ -334,18 +307,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-NO611",
-  "Quota": 1,
-  "Flight": "NO611",
-  "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
+  "quota_id": "0-N48584",
+  "Quota": 2,
+  "Flight": "N48584",
+  "DestName": "OTP (Bucharest Henri Coanda International - Romania)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-NO611",
-  "Quota": 5,
-  "Flight": "NO611",
+  "quota_id": "0-NO511",
+  "Quota": 9,
+  "Flight": "NO511",
   "DestName": "MXP (Milan Malpensa - Italy)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
@@ -353,7 +326,7 @@ let quota_info = `
  },
  {
   "quota_id": "0-OD294",
-  "Quota": 6,
+  "Quota": 3,
   "Flight": "OD294",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Sunday",
@@ -361,10 +334,19 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-PG712",
-  "Quota": 2,
-  "Flight": "PG712",
-  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
+  "quota_id": "0-OD296",
+  "Quota": 3,
+  "Flight": "OD296",
+  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "0-OS046",
+  "Quota": 5,
+  "Flight": "OS046",
+  "DestName": "VIE (Vienna International - Austria)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
   "Quarter": "2023-Q4"
@@ -532,10 +514,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "0-WK067",
-  "Quota": 5,
-  "Flight": "WK067",
-  "DestName": "ZRH (Zurich - Switzerland)",
+  "quota_id": "0-VS385",
+  "Quota": 4,
+  "Flight": "VS385",
+  "DestName": "LHR (London Heathrow - United Kingdom)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
   "Quarter": "2023-Q4"
@@ -550,8 +532,17 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "0-WY384",
+  "Quota": 3,
+  "Flight": "WY384",
+  "DestName": "MCT (Muscat International - Oman)",
+  "day_of_week_name": "Sunday",
+  "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "0-ZF702",
-  "Quota": 5,
+  "Quota": 4,
   "Flight": "ZF702",
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Sunday",
@@ -565,6 +556,15 @@ let quota_info = `
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Sunday",
   "day_of_week": "0",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-4Y155",
+  "Quota": 5,
+  "Flight": "4Y155",
+  "DestName": "FRA (Frankfurt - Germany)",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
   "Quarter": "2023-Q4"
  },
  {
@@ -622,28 +622,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-8D814",
-  "Quota": 3,
-  "Flight": "8D814",
-  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
-  "day_of_week_name": "Monday",
-  "day_of_week": "1",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "1-AI1266",
   "Quota": 3,
   "Flight": "AI1266",
   "DestName": "BLR (Bangalore Kempegowda International - India)",
-  "day_of_week_name": "Monday",
-  "day_of_week": "1",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "1-AI1268",
-  "Quota": 3,
-  "Flight": "AI1268",
-  "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
@@ -659,7 +641,7 @@ let quota_info = `
  },
  {
   "quota_id": "1-AK075",
-  "Quota": 1,
+  "Quota": 4,
   "Flight": "AK075",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Monday",
@@ -668,7 +650,7 @@ let quota_info = `
  },
  {
   "quota_id": "1-AZ777",
-  "Quota": 5,
+  "Quota": 4,
   "Flight": "AZ777",
   "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
   "day_of_week_name": "Monday",
@@ -689,6 +671,24 @@ let quota_info = `
   "Quota": 3,
   "Flight": "BS338",
   "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-CY813",
+  "Quota": 2,
+  "Flight": "CY813",
+  "DestName": "LCA (Larnaca International - Cyprus)",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-DE2321",
+  "Quota": 5,
+  "Flight": "DE2321",
+  "DestName": "FRA (Frankfurt - Germany)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
@@ -749,7 +749,7 @@ let quota_info = `
  },
  {
   "quota_id": "1-EY 261",
-  "Quota": 1,
+  "Quota": 2,
   "Flight": "EY 261",
   "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
   "day_of_week_name": "Monday",
@@ -866,9 +866,18 @@ let quota_info = `
  },
  {
   "quota_id": "1-JD456",
-  "Quota": 2,
+  "Quota": 4,
   "Flight": "JD456",
   "DestName": "PKX (Beijing Daxing - China)",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-KC586",
+  "Quota": 3,
+  "Flight": "KC586",
+  "DestName": "ALA (Almaty International - Kazakhstan)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
@@ -883,19 +892,28 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-OD294",
-  "Quota": 3,
-  "Flight": "OD294",
-  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
+  "quota_id": "1-NO611",
+  "Quota": 1,
+  "Flight": "NO611",
+  "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-OS046",
+  "quota_id": "1-NO611",
   "Quota": 5,
-  "Flight": "OS046",
-  "DestName": "VIE (Vienna International - Austria)",
+  "Flight": "NO611",
+  "DestName": "MXP (Milan Malpensa - Italy)",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-OD294",
+  "Quota": 6,
+  "Flight": "OD294",
+  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
@@ -910,19 +928,19 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-Q2707",
+  "quota_id": "1-Q2701",
   "Quota": 2,
-  "Flight": "Q2707",
-  "DestName": "COK (Cochin International - India)",
+  "Flight": "Q2701",
+  "DestName": "TRV (Trivandrum International - India)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-Q2733",
+  "quota_id": "1-Q2707",
   "Quota": 2,
-  "Flight": "Q2733",
-  "DestName": "BLR (Bangalore Kempegowda International - India)",
+  "Flight": "Q2707",
+  "DestName": "COK (Cochin International - India)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
@@ -1009,10 +1027,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-SV839",
-  "Quota": 5,
-  "Flight": "SV839",
-  "DestName": "RUH (Riyadh King Khalid International - Saudi Arabia)",
+  "quota_id": "1-SU325",
+  "Quota": 6,
+  "Flight": "SU325",
+  "DestName": "SVO (Moscow Sheremetyevo International - Russia)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
@@ -1072,10 +1090,19 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "1-VS385",
-  "Quota": 4,
-  "Flight": "VS385",
-  "DestName": "LHR (London Heathrow - United Kingdom)",
+  "quota_id": "1-WK067",
+  "Quota": 5,
+  "Flight": "WK067",
+  "DestName": "ZRH (Zurich - Switzerland)",
+  "day_of_week_name": "Monday",
+  "day_of_week": "1",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "1-WY382",
+  "Quota": 3,
+  "Flight": "WY382",
+  "DestName": "MCT (Muscat International - Oman)",
   "day_of_week_name": "Monday",
   "day_of_week": "1",
   "Quarter": "2023-Q4"
@@ -1135,10 +1162,37 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "2-6E1814",
+  "Quota": 3,
+  "Flight": "6E1814",
+  "DestName": "DEL (Delhi Indira Gandhi International - India)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-8D812",
+  "Quota": 3,
+  "Flight": "8D812",
+  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "2-8D814",
   "Quota": 3,
   "Flight": "8D814",
   "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-AI1266",
+  "Quota": 3,
+  "Flight": "AI1266",
+  "DestName": "BLR (Bangalore Kempegowda International - India)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
   "Quarter": "2023-Q4"
@@ -1163,7 +1217,7 @@ let quota_info = `
  },
  {
   "quota_id": "2-AK075",
-  "Quota": 3,
+  "Quota": 1,
   "Flight": "AK075",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Tuesday",
@@ -1172,7 +1226,7 @@ let quota_info = `
  },
  {
   "quota_id": "2-AZ777",
-  "Quota": 4,
+  "Quota": 5,
   "Flight": "AZ777",
   "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
   "day_of_week_name": "Tuesday",
@@ -1193,15 +1247,6 @@ let quota_info = `
   "Quota": 3,
   "Flight": "BS338",
   "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
-  "day_of_week_name": "Tuesday",
-  "day_of_week": "2",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "2-DE2321",
-  "Quota": 5,
-  "Flight": "DE2321",
-  "DestName": "FRA (Frankfurt - Germany)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
   "Quarter": "2023-Q4"
@@ -1256,6 +1301,15 @@ let quota_info = `
   "Quota": 6,
   "Flight": "EK663",
   "DestName": "DXB (Dubai International - United Arab Emirates)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-EY 261",
+  "Quota": 1,
+  "Flight": "EY 261",
+  "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
   "Quarter": "2023-Q4"
@@ -1369,6 +1423,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "2-JD456",
+  "Quota": 2,
+  "Flight": "JD456",
+  "DestName": "PKX (Beijing Daxing - China)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "2-MU236",
   "Quota": 4,
   "Flight": "MU236",
@@ -1378,27 +1441,9 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "2-NO141",
-  "Quota": 6,
-  "Flight": "NO141",
-  "DestName": "MXP (Milan Malpensa - Italy)",
-  "day_of_week_name": "Tuesday",
-  "day_of_week": "2",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "2-OD294",
   "Quota": 3,
   "Flight": "OD294",
-  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
-  "day_of_week_name": "Tuesday",
-  "day_of_week": "2",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "2-OD296",
-  "Quota": 3,
-  "Flight": "OD296",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
@@ -1414,10 +1459,28 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "2-Q2503",
+  "quota_id": "2-PG712",
   "Quota": 2,
-  "Flight": "Q2503",
-  "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
+  "Flight": "PG712",
+  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-Q2707",
+  "Quota": 2,
+  "Flight": "Q2707",
+  "DestName": "COK (Cochin International - India)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "2-Q2733",
+  "Quota": 2,
+  "Flight": "Q2733",
+  "DestName": "BLR (Bangalore Kempegowda International - India)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
   "Quarter": "2023-Q4"
@@ -1504,6 +1567,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "2-SV839",
+  "Quota": 5,
+  "Flight": "SV839",
+  "DestName": "RUH (Riyadh King Khalid International - Saudi Arabia)",
+  "day_of_week_name": "Tuesday",
+  "day_of_week": "2",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "2-TK735",
   "Quota": 5,
   "Flight": "TK735",
@@ -1558,17 +1630,17 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "2-WK067",
-  "Quota": 5,
-  "Flight": "WK067",
-  "DestName": "ZRH (Zurich - Switzerland)",
+  "quota_id": "2-VS385",
+  "Quota": 4,
+  "Flight": "VS385",
+  "DestName": "LHR (London Heathrow - United Kingdom)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
   "Quarter": "2023-Q4"
  },
  {
   "quota_id": "2-ZF702",
-  "Quota": 4,
+  "Quota": 5,
   "Flight": "ZF702",
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Tuesday",
@@ -1582,15 +1654,6 @@ let quota_info = `
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Tuesday",
   "day_of_week": "2",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "3-4Y155",
-  "Quota": 5,
-  "Flight": "4Y155",
-  "DestName": "FRA (Frankfurt - Germany)",
-  "day_of_week_name": "Wednesday",
-  "day_of_week": "3",
   "Quarter": "2023-Q4"
  },
  {
@@ -1630,28 +1693,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-6E1814",
+  "quota_id": "3-8D814",
   "Quota": 3,
-  "Flight": "6E1814",
-  "DestName": "DEL (Delhi Indira Gandhi International - India)",
-  "day_of_week_name": "Wednesday",
-  "day_of_week": "3",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "3-8D812",
-  "Quota": 3,
-  "Flight": "8D812",
+  "Flight": "8D814",
   "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
-  "day_of_week_name": "Wednesday",
-  "day_of_week": "3",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "3-AI1266",
-  "Quota": 3,
-  "Flight": "AI1266",
-  "DestName": "BLR (Bangalore Kempegowda International - India)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
@@ -1676,9 +1721,18 @@ let quota_info = `
  },
  {
   "quota_id": "3-AK075",
-  "Quota": 1,
+  "Quota": 3,
   "Flight": "AK075",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-AZ777",
+  "Quota": 4,
+  "Flight": "AZ777",
+  "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
@@ -1697,6 +1751,15 @@ let quota_info = `
   "Quota": 3,
   "Flight": "BS338",
   "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "3-DE2321",
+  "Quota": 5,
+  "Flight": "DE2321",
+  "DestName": "FRA (Frankfurt - Germany)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
@@ -1751,15 +1814,6 @@ let quota_info = `
   "Quota": 6,
   "Flight": "EK663",
   "DestName": "DXB (Dubai International - United Arab Emirates)",
-  "day_of_week_name": "Wednesday",
-  "day_of_week": "3",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "3-EY 261",
-  "Quota": 1,
-  "Flight": "EY 261",
-  "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
@@ -1873,19 +1927,19 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-JD456",
+  "quota_id": "3-MU236",
   "Quota": 4,
-  "Flight": "JD456",
-  "DestName": "PKX (Beijing Daxing - China)",
+  "Flight": "MU236",
+  "DestName": "PVG (Shanghai Pudong International - China)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-MU236",
-  "Quota": 3,
-  "Flight": "MU236",
-  "DestName": "PVG (Shanghai Pudong International - China)",
+  "quota_id": "3-NO141",
+  "Quota": 6,
+  "Flight": "NO141",
+  "DestName": "MXP (Milan Malpensa - Italy)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
@@ -1900,28 +1954,28 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-PG712",
-  "Quota": 2,
-  "Flight": "PG712",
-  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
+  "quota_id": "3-OD296",
+  "Quota": 3,
+  "Flight": "OD296",
+  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-Q2701",
-  "Quota": 2,
-  "Flight": "Q2701",
-  "DestName": "TRV (Trivandrum International - India)",
+  "quota_id": "3-OS046",
+  "Quota": 5,
+  "Flight": "OS046",
+  "DestName": "VIE (Vienna International - Austria)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-Q2707",
+  "quota_id": "3-Q2503",
   "Quota": 2,
-  "Flight": "Q2707",
-  "DestName": "COK (Cochin International - India)",
+  "Flight": "Q2503",
+  "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
   "day_of_week_name": "Wednesday",
   "day_of_week": "3",
   "Quarter": "2023-Q4"
@@ -2008,15 +2062,6 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "3-SU325",
-  "Quota": 6,
-  "Flight": "SU325",
-  "DestName": "SVO (Moscow Sheremetyevo International - Russia)",
-  "day_of_week_name": "Wednesday",
-  "day_of_week": "3",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "3-TK735",
   "Quota": 5,
   "Flight": "TK735",
@@ -2071,6 +2116,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "3-WK067",
+  "Quota": 5,
+  "Flight": "WK067",
+  "DestName": "ZRH (Zurich - Switzerland)",
+  "day_of_week_name": "Wednesday",
+  "day_of_week": "3",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "3-ZF702",
   "Quota": 4,
   "Flight": "ZF702",
@@ -2089,10 +2143,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-3U3924",
-  "Quota": 1,
-  "Flight": "3U3924",
-  "DestName": "TFU (Chengdu Tianfu International Airport - China)",
+  "quota_id": "4-4Y155",
+  "Quota": 5,
+  "Flight": "4Y155",
+  "DestName": "FRA (Frankfurt - Germany)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
   "Quarter": "2023-Q4"
@@ -2134,9 +2188,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-8D814",
+  "quota_id": "4-6E1814",
   "Quota": 3,
-  "Flight": "8D814",
+  "Flight": "6E1814",
+  "DestName": "DEL (Delhi Indira Gandhi International - India)",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "4-8D812",
+  "Quota": 3,
+  "Flight": "8D812",
   "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
@@ -2152,6 +2215,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "4-AI1268",
+  "Quota": 3,
+  "Flight": "AI1268",
+  "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "4-AK073",
   "Quota": 3,
   "Flight": "AK073",
@@ -2162,18 +2234,9 @@ let quota_info = `
  },
  {
   "quota_id": "4-AK075",
-  "Quota": 3,
+  "Quota": 1,
   "Flight": "AK075",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
-  "day_of_week_name": "Thursday",
-  "day_of_week": "4",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "4-AZ777",
-  "Quota": 2,
-  "Flight": "AZ777",
-  "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
   "Quarter": "2023-Q4"
@@ -2192,15 +2255,6 @@ let quota_info = `
   "Quota": 3,
   "Flight": "BS338",
   "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
-  "day_of_week_name": "Thursday",
-  "day_of_week": "4",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "4-DE2321",
-  "Quota": 5,
-  "Flight": "DE2321",
-  "DestName": "FRA (Frankfurt - Germany)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
   "Quarter": "2023-Q4"
@@ -2261,7 +2315,7 @@ let quota_info = `
  },
  {
   "quota_id": "4-EY 261",
-  "Quota": 2,
+  "Quota": 1,
   "Flight": "EY 261",
   "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
   "day_of_week_name": "Thursday",
@@ -2377,17 +2431,17 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-LO6290",
-  "Quota": 2,
-  "Flight": "LO6290",
-  "DestName": "WAW (Warsaw Chopin - Poland)",
+  "quota_id": "4-JD456",
+  "Quota": 4,
+  "Flight": "JD456",
+  "DestName": "PKX (Beijing Daxing - China)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
   "Quarter": "2023-Q4"
  },
  {
   "quota_id": "4-MU236",
-  "Quota": 4,
+  "Quota": 3,
   "Flight": "MU236",
   "DestName": "PVG (Shanghai Pudong International - China)",
   "day_of_week_name": "Thursday",
@@ -2404,19 +2458,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-OD296",
-  "Quota": 3,
-  "Flight": "OD296",
-  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
-  "day_of_week_name": "Thursday",
-  "day_of_week": "4",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "4-OS046",
-  "Quota": 5,
-  "Flight": "OS046",
-  "DestName": "VIE (Vienna International - Austria)",
+  "quota_id": "4-PG712",
+  "Quota": 2,
+  "Flight": "PG712",
+  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
   "Quarter": "2023-Q4"
@@ -2431,10 +2476,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-Q2733",
+  "quota_id": "4-Q2707",
   "Quota": 2,
-  "Flight": "Q2733",
-  "DestName": "BLR (Bangalore Kempegowda International - India)",
+  "Flight": "Q2707",
+  "DestName": "COK (Cochin International - India)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
   "Quarter": "2023-Q4"
@@ -2521,6 +2566,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "4-SU325",
+  "Quota": 6,
+  "Flight": "SU325",
+  "DestName": "SVO (Moscow Sheremetyevo International - Russia)",
+  "day_of_week_name": "Thursday",
+  "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "4-TK735",
   "Quota": 5,
   "Flight": "TK735",
@@ -2575,26 +2629,8 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "4-VS385",
-  "Quota": 4,
-  "Flight": "VS385",
-  "DestName": "LHR (London Heathrow - United Kingdom)",
-  "day_of_week_name": "Thursday",
-  "day_of_week": "4",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "4-WY384",
-  "Quota": 3,
-  "Flight": "WY384",
-  "DestName": "MCT (Muscat International - Oman)",
-  "day_of_week_name": "Thursday",
-  "day_of_week": "4",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "4-ZF702",
-  "Quota": 5,
+  "Quota": 4,
   "Flight": "ZF702",
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Thursday",
@@ -2608,6 +2644,15 @@ let quota_info = `
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Thursday",
   "day_of_week": "4",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-3U3924",
+  "Quota": 1,
+  "Flight": "3U3924",
+  "DestName": "TFU (Chengdu Tianfu International Airport - China)",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
   "Quarter": "2023-Q4"
  },
  {
@@ -2647,18 +2692,9 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-6E1814",
+  "quota_id": "5-8D814",
   "Quota": 3,
-  "Flight": "6E1814",
-  "DestName": "DEL (Delhi Indira Gandhi International - India)",
-  "day_of_week_name": "Friday",
-  "day_of_week": "5",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "5-8D812",
-  "Quota": 3,
-  "Flight": "8D812",
+  "Flight": "8D814",
   "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
   "day_of_week_name": "Friday",
   "day_of_week": "5",
@@ -2674,15 +2710,6 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-AI1268",
-  "Quota": 3,
-  "Flight": "AI1268",
-  "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
-  "day_of_week_name": "Friday",
-  "day_of_week": "5",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "5-AK073",
   "Quota": 3,
   "Flight": "AK073",
@@ -2693,7 +2720,7 @@ let quota_info = `
  },
  {
   "quota_id": "5-AK075",
-  "Quota": 4,
+  "Quota": 3,
   "Flight": "AK075",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Friday",
@@ -2908,19 +2935,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-JD456",
-  "Quota": 4,
-  "Flight": "JD456",
-  "DestName": "PKX (Beijing Daxing - China)",
-  "day_of_week_name": "Friday",
-  "day_of_week": "5",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "5-KC586",
-  "Quota": 3,
-  "Flight": "KC586",
-  "DestName": "ALA (Almaty International - Kazakhstan)",
+  "quota_id": "5-LO6290",
+  "Quota": 2,
+  "Flight": "LO6290",
+  "DestName": "WAW (Warsaw Chopin - Poland)",
   "day_of_week_name": "Friday",
   "day_of_week": "5",
   "Quarter": "2023-Q4"
@@ -2944,19 +2962,37 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-PG712",
-  "Quota": 2,
-  "Flight": "PG712",
-  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
+  "quota_id": "5-OD296",
+  "Quota": 3,
+  "Flight": "OD296",
+  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Friday",
   "day_of_week": "5",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-Q2503",
+  "quota_id": "5-OS046",
+  "Quota": 5,
+  "Flight": "OS046",
+  "DestName": "VIE (Vienna International - Austria)",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-Q2701",
   "Quota": 2,
-  "Flight": "Q2503",
-  "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
+  "Flight": "Q2701",
+  "DestName": "TRV (Trivandrum International - India)",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "5-Q2733",
+  "Quota": 2,
+  "Flight": "Q2733",
+  "DestName": "BLR (Bangalore Kempegowda International - India)",
   "day_of_week_name": "Friday",
   "day_of_week": "5",
   "Quarter": "2023-Q4"
@@ -3043,15 +3079,6 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-SV839",
-  "Quota": 5,
-  "Flight": "SV839",
-  "DestName": "RUH (Riyadh King Khalid International - Saudi Arabia)",
-  "day_of_week_name": "Friday",
-  "day_of_week": "5",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "5-TK735",
   "Quota": 5,
   "Flight": "TK735",
@@ -3106,19 +3133,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "5-WK067",
-  "Quota": 5,
-  "Flight": "WK067",
-  "DestName": "ZRH (Zurich - Switzerland)",
-  "day_of_week_name": "Friday",
-  "day_of_week": "5",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "5-WY382",
-  "Quota": 3,
-  "Flight": "WY382",
-  "DestName": "MCT (Muscat International - Oman)",
+  "quota_id": "5-VS385",
+  "Quota": 4,
+  "Flight": "VS385",
+  "DestName": "LHR (London Heathrow - United Kingdom)",
   "day_of_week_name": "Friday",
   "day_of_week": "5",
   "Quarter": "2023-Q4"
@@ -3134,7 +3152,7 @@ let quota_info = `
  },
  {
   "quota_id": "5-ZF702",
-  "Quota": 4,
+  "Quota": 5,
   "Flight": "ZF702",
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Friday",
@@ -3142,12 +3160,12 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-3U3924",
+  "quota_id": "5-ZF7222",
   "Quota": 1,
-  "Flight": "3U3924",
-  "DestName": "TFU (Chengdu Tianfu International Airport - China)",
-  "day_of_week_name": "Saturday",
-  "day_of_week": "6",
+  "Flight": "ZF7222",
+  "DestName": "VKO (Moscow Vnukovo International - Russia)",
+  "day_of_week_name": "Friday",
+  "day_of_week": "5",
   "Quarter": "2023-Q4"
  },
  {
@@ -3187,9 +3205,18 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-8D814",
+  "quota_id": "6-6E1814",
   "Quota": 3,
-  "Flight": "8D814",
+  "Flight": "6E1814",
+  "DestName": "DEL (Delhi Indira Gandhi International - India)",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-8D812",
+  "Quota": 3,
+  "Flight": "8D812",
   "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",
@@ -3205,6 +3232,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "6-AI1268",
+  "Quota": 3,
+  "Flight": "AI1268",
+  "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "6-AK073",
   "Quota": 3,
   "Flight": "AK073",
@@ -3215,7 +3251,7 @@ let quota_info = `
  },
  {
   "quota_id": "6-AK075",
-  "Quota": 3,
+  "Quota": 4,
   "Flight": "AK075",
   "DestName": "KUL (Kuala Lumpur International - Malaysia)",
   "day_of_week_name": "Saturday",
@@ -3224,7 +3260,7 @@ let quota_info = `
  },
  {
   "quota_id": "6-AZ777",
-  "Quota": 4,
+  "Quota": 2,
   "Flight": "AZ777",
   "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
   "day_of_week_name": "Saturday",
@@ -3250,10 +3286,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-C65532",
-  "Quota": 3,
-  "Flight": "C65532",
-  "DestName": "TAS (Tashkent International - Uzbekistan)",
+  "quota_id": "6-DE2321",
+  "Quota": 5,
+  "Flight": "DE2321",
+  "DestName": "FRA (Frankfurt - Germany)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",
   "Quarter": "2023-Q4"
@@ -3308,6 +3344,15 @@ let quota_info = `
   "Quota": 6,
   "Flight": "EK663",
   "DestName": "DXB (Dubai International - United Arab Emirates)",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
+  "quota_id": "6-EY 261",
+  "Quota": 2,
+  "Flight": "EY 261",
+  "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",
   "Quarter": "2023-Q4"
@@ -3394,15 +3439,6 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-HY3526",
-  "Quota": 2,
-  "Flight": "HY3526",
-  "DestName": "TAS (Tashkent International - Uzbekistan)",
-  "day_of_week_name": "Saturday",
-  "day_of_week": "6",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "6-IX661",
   "Quota": 1,
   "Flight": "IX661",
@@ -3430,6 +3466,15 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
+  "quota_id": "6-JD456",
+  "Quota": 4,
+  "Flight": "JD456",
+  "DestName": "PKX (Beijing Daxing - China)",
+  "day_of_week_name": "Saturday",
+  "day_of_week": "6",
+  "Quarter": "2023-Q4"
+ },
+ {
   "quota_id": "6-KC586",
   "Quota": 3,
   "Flight": "KC586",
@@ -3448,24 +3493,6 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-N48584",
-  "Quota": 2,
-  "Flight": "N48584",
-  "DestName": "OTP (Bucharest Henri Coanda International - Romania)",
-  "day_of_week_name": "Saturday",
-  "day_of_week": "6",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "6-NO511",
-  "Quota": 9,
-  "Flight": "NO511",
-  "DestName": "MXP (Milan Malpensa - Italy)",
-  "day_of_week_name": "Saturday",
-  "day_of_week": "6",
-  "Quarter": "2023-Q4"
- },
- {
   "quota_id": "6-OD294",
   "Quota": 3,
   "Flight": "OD294",
@@ -3475,37 +3502,19 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-OD296",
-  "Quota": 3,
-  "Flight": "OD296",
-  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
-  "day_of_week_name": "Saturday",
-  "day_of_week": "6",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "6-OS046",
-  "Quota": 5,
-  "Flight": "OS046",
-  "DestName": "VIE (Vienna International - Austria)",
-  "day_of_week_name": "Saturday",
-  "day_of_week": "6",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "6-Q2701",
+  "quota_id": "6-PG712",
   "Quota": 2,
-  "Flight": "Q2701",
-  "DestName": "TRV (Trivandrum International - India)",
+  "Flight": "PG712",
+  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-Q2707",
+  "quota_id": "6-Q2503",
   "Quota": 2,
-  "Flight": "Q2707",
-  "DestName": "COK (Cochin International - India)",
+  "Flight": "Q2503",
+  "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",
   "Quarter": "2023-Q4"
@@ -3592,10 +3601,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-SU325",
-  "Quota": 6,
-  "Flight": "SU325",
-  "DestName": "SVO (Moscow Sheremetyevo International - Russia)",
+  "quota_id": "6-SV839",
+  "Quota": 5,
+  "Flight": "SV839",
+  "DestName": "RUH (Riyadh King Khalid International - Saudi Arabia)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",
   "Quarter": "2023-Q4"
@@ -3655,10 +3664,10 @@ let quota_info = `
   "Quarter": "2023-Q4"
  },
  {
-  "quota_id": "6-VS385",
-  "Quota": 4,
-  "Flight": "VS385",
-  "DestName": "LHR (London Heathrow - United Kingdom)",
+  "quota_id": "6-WK067",
+  "Quota": 5,
+  "Flight": "WK067",
+  "DestName": "ZRH (Zurich - Switzerland)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",
   "Quarter": "2023-Q4"
@@ -3685,15 +3694,6 @@ let quota_info = `
   "quota_id": "6-ZF702",
   "Quota": 4,
   "Flight": "ZF702",
-  "DestName": "VKO (Moscow Vnukovo International - Russia)",
-  "day_of_week_name": "Saturday",
-  "day_of_week": "6",
-  "Quarter": "2023-Q4"
- },
- {
-  "quota_id": "6-ZF7222",
-  "Quota": 1,
-  "Flight": "ZF7222",
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "day_of_week_name": "Saturday",
   "day_of_week": "6",

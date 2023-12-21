@@ -20,6 +20,27 @@ var total_hard_quota;
 var total_quota;
 
 /************************************/
+function clean_data ()
+{
+  for (i = 0; i<interview_data.length; i++ )
+  {
+    //if (interview_data[i].InterviewEndDate.substring(3,10) == "10-2023") 
+    {
+      if ( interview_data[i].quota_id == "1-AI268") interview_data[i].quota_id = "1-AI1268"; 
+      if ( interview_data[i].quota_id == "1-Ai268") interview_data[i].quota_id = "1-AI1268"; 
+      if ( interview_data[i].quota_id == "3-AI268") interview_data[i].quota_id = "3-AI1268"; 
+      if ( interview_data[i].quota_id == "3-AI268") interview_data[i].quota_id = "3-AI1268"; 
+      if ( interview_data[i].quota_id == "4-SU320") interview_data[i].quota_id = "4-SU321"; 
+
+      if ( interview_data[i].quota_id.toUpperCase() == "0-AK73") interview_data[i].quota_id = "0-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "1-AK73") interview_data[i].quota_id = "1-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "2-AK73") interview_data[i].quota_id = "2-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "3-AK73") interview_data[i].quota_id = "3-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "4-AK73") interview_data[i].quota_id = "4-AK073";       
+    }  
+
+  }
+}
 function initCurrentTimeVars() {
   var today = new Date();
 
@@ -133,6 +154,9 @@ function prepareInterviewData() {
     if ((quota_data_temp[i].Quota>0)
          && (quota_data_temp[i].Quarter == currentQuarter))
     {
+      quota_data_temp[i].quota_id=quota_data_temp[i].quota_id.replace(" ", "");
+      quota_data_temp[i].Flight =quota_data_temp[i].Flight.replace(" ", "");
+
       quota_data.push(quota_data_temp[i]);
     }
   }
@@ -158,12 +182,14 @@ function prepareInterviewData() {
         var InterviewEndDate = '"InterviewEndDate"' + ":" + '"' +  interview["InterviewDate"] + '", ';
         var Completed_of_interviews = '"Completed_of_interviews"' + ":" + '"' +  interview["Number of interviews"] ;
         
+        quota_id = quota_id.replace(" ", "");
         var str = '{' + quota_id + InterviewEndDate + Completed_of_interviews + '"}';
 
         interview_data.push(JSON.parse(str));
        }
     }
   }
+  clean_data();
 
   //prepare flight list
   //empty the list
@@ -195,6 +221,7 @@ function prepareInterviewData() {
         && notDeparted(flight.Time)
         )
     { 
+      flight.Flight = flight.Flight.replace(" ", "");
       flight.quota_id = flight.day_of_week + "-" + flight.Flight;
       today_flight_list.push(flight);
     }

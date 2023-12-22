@@ -29,7 +29,12 @@ function clean_data ()
       if ( interview_data[i].quota_id == "1-AI268") interview_data[i].quota_id = "1-AI1268"; 
       if ( interview_data[i].quota_id == "1-Ai268") interview_data[i].quota_id = "1-AI1268"; 
       if ( interview_data[i].quota_id == "3-AI268") interview_data[i].quota_id = "3-AI1268"; 
-      if ( interview_data[i].quota_id == "3-AI268") interview_data[i].quota_id = "3-AI1268"; 
+      if ( interview_data[i].quota_id == "4-AI268") interview_data[i].quota_id = "4-AI1268"; 
+      if ( interview_data[i].quota_id == "5-AI268") interview_data[i].quota_id = "5-AI1268"; 
+      if ( interview_data[i].quota_id == "5-AIL268") interview_data[i].quota_id = "5-AI1268"; 
+      if ( interview_data[i].quota_id == "6-AIL268") interview_data[i].quota_id = "6-AI1268"; 
+      if ( interview_data[i].quota_id == "0-AIL268") interview_data[i].quota_id = "0-AI1268"; 
+
       if ( interview_data[i].quota_id == "4-SU320") interview_data[i].quota_id = "4-SU321"; 
 
       if ( interview_data[i].quota_id.toUpperCase() == "0-AK73") interview_data[i].quota_id = "0-AK073"; 

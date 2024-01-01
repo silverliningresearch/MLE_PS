@@ -18,7 +18,7 @@ var total_completed_percent;
 var total_quota_completed;
 var total_hard_quota;
 var total_quota;
-
+var Jan_2024_cut_off_day = 21;
 /************************************/
 function clean_data ()
 {
@@ -72,6 +72,14 @@ function initCurrentTimeVars() {
   if (tomorrowDay.length < 2) tomorrowDay = '0' + tomorrowDay;
 
   nextDate  = [tomorrowDay, tomorrowMonth, tomorrowYear].join('-');
+
+    //special patch for Nov: 01-05 Nov calcuated as Oct    
+    if ((year == 2024) && (month == '01') &&  (day <= Jan_2024_cut_off_day))
+    {
+      currentQuarter = "2023-Q4";
+    } 
+  
+    
   //////////
   if (document.getElementById('year_month') && document.getElementById('year_month').value.length > 0)
   {
@@ -249,6 +257,7 @@ function prepareInterviewData() {
        }
     }
   }
-   //console.log("today_flight_list: ", today_flight_list);
+   console.log("today_flight_list: ", today_flight_list);
    //console.log("quota_data: ", quota_data);
+   console.log("daily_plan_data: ", daily_plan_data);
 }

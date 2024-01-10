@@ -18,6 +18,7 @@ var total_completed_percent;
 var total_quota_completed;
 var total_hard_quota;
 var total_quota;
+var total_over_quota = 0;
 var Jan_2024_cut_off_day = 21;
 /************************************/
 function clean_data ()

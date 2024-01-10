@@ -125,8 +125,14 @@
 
         var overall_status = "Total quota: " + total_quota;
         overall_status += " - Total completed: " + total_completed;
-        //overall_status += " - Quota completed: " + total_quota_completed;
-        document.getElementById("overall_status").innerHTML = overall_status + " | " + "Data updated at " + download_time;
+
+        var detail_status = "In quota list: " + total_quota_completed;
+        detail_status += " | Over quota: " + total_over_quota;
+        detail_status += " | Not in quota list: " + (total_completed - total_quota_completed);
+        
+        document.getElementById("overall_status").innerHTML =  overall_status;
+        document.getElementById("detail_status").innerHTML = detail_status ;
+        document.getElementById("download_time").innerHTML = "Data updated at " + download_time;
       }
     </script>
   </head>
@@ -134,7 +140,8 @@
 		<h1>Quota Report - MLE Passenger Profile Survey</h1>
     
     <h4 id="overall_status"></h4>
-    <!-- <h4 id="download_time"></h4> -->
+    <h5 id="detail_status"></h4>
+    <h5 id="download_time"></h4>
     
     <div class="year_month">
       <label for="year_month">Data collection period:</label>

@@ -27,14 +27,22 @@ function clean_data ()
   {
     //if (interview_data[i].InterviewEndDate.substring(3,10) == "10-2023") 
     {
-      if ( interview_data[i].quota_id.toLowerCase() == "ek-dubai") interview_data[i].quota_id = "EK-DXB"; 
-      if ( interview_data[i].quota_id.toLowerCase() == "qr-dia") interview_data[i].quota_id = "QR-DOH"; 
-      if ( interview_data[i].quota_id.toLowerCase() == "qr-dia") interview_data[i].quota_id = "QR-DOH"; 
-      if ( interview_data[i].quota_id.toLowerCase() == "qr-doha") interview_data[i].quota_id = "QR-DOH";       
-      if ( interview_data[i].quota_id.toLowerCase() == "q4-doha") interview_data[i].quota_id = "QR-DOH";       
-      if ( interview_data[i].quota_id.toLowerCase() == "q4-doha") interview_data[i].quota_id = "QR-DOH";       
-      if ( interview_data[i].quota_id.toLowerCase() == "ai-mumbai") interview_data[i].quota_id = "AI-BOM";       
-    
+      if ( interview_data[i].quota_id == "1-AI268") interview_data[i].quota_id = "1-AI1268"; 
+      if ( interview_data[i].quota_id == "1-Ai268") interview_data[i].quota_id = "1-AI1268"; 
+      if ( interview_data[i].quota_id == "3-AI268") interview_data[i].quota_id = "3-AI1268"; 
+      if ( interview_data[i].quota_id == "4-AI268") interview_data[i].quota_id = "4-AI1268"; 
+      if ( interview_data[i].quota_id == "5-AI268") interview_data[i].quota_id = "5-AI1268"; 
+      if ( interview_data[i].quota_id == "5-AIL268") interview_data[i].quota_id = "5-AI1268"; 
+      if ( interview_data[i].quota_id == "6-AIL268") interview_data[i].quota_id = "6-AI1268"; 
+      if ( interview_data[i].quota_id == "0-AIL268") interview_data[i].quota_id = "0-AI1268"; 
+
+      if ( interview_data[i].quota_id == "4-SU320") interview_data[i].quota_id = "4-SU321"; 
+
+      if ( interview_data[i].quota_id.toUpperCase() == "0-AK73") interview_data[i].quota_id = "0-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "1-AK73") interview_data[i].quota_id = "1-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "2-AK73") interview_data[i].quota_id = "2-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "3-AK73") interview_data[i].quota_id = "3-AK073"; 
+      if ( interview_data[i].quota_id.toUpperCase() == "4-AK73") interview_data[i].quota_id = "4-AK073";       
     }  
 
   }
@@ -127,7 +135,7 @@ function notDeparted(flight_time) {
 
   //Time: 0805    
   var flight_time_value = flight_time.substring(0,2) * 60 + flight_time.substring(2,4)*1;
-  var result = (flight_time_value + 120 > current_time_value);
+  var result = (flight_time_value > current_time_value);
   return (result);
 }
 
@@ -160,6 +168,9 @@ function prepareInterviewData() {
     if ((quota_data_temp[i].Quota>0)
          && (quota_data_temp[i].Quarter == currentQuarter))
     {
+      quota_data_temp[i].quota_id=quota_data_temp[i].quota_id.replace(" ", "");
+      quota_data_temp[i].Flight =quota_data_temp[i].Flight.replace(" ", "");
+
       quota_data.push(quota_data_temp[i]);
     }
   }
@@ -206,8 +217,7 @@ function prepareInterviewData() {
     let flight = flight_list_full[i];
 
     //airport_airline
-    flight.Flight = flight.Flight.replace(" ", "");
-    flight.quota_id = flight.AirlineCode + "-" + flight.Dest;//code for compare
+    flight.quota_id = flight.Flight;//code for compare
 
     //currentQuarter: 02-2023
     //flight.Date: 08-02-2023
@@ -225,6 +235,8 @@ function prepareInterviewData() {
         && notDeparted(flight.Time)
         )
     { 
+      flight.Flight = flight.Flight.replace(" ", "");
+      flight.quota_id = flight.day_of_week + "-" + flight.Flight;
       today_flight_list.push(flight);
     }
     
@@ -239,12 +251,10 @@ function prepareInterviewData() {
     let flight = today_flight_list[i];
     for (j = 0; j < quota_data.length; j++) {
       let quota = quota_data[j];
-      if ((quota.quota_id == flight.quota_id))
+      if ((quota.quota_id == flight.quota_id) && (quota.Quota>0))
       {
-        if (quota.Quota>0) {
-          flight.Quota = quota.Quota;
-          daily_plan_data.push(flight);
-        }
+        flight.Quota = quota.Quota;
+        daily_plan_data.push(flight);
        }
     }
   }

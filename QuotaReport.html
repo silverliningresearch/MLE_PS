@@ -9,7 +9,7 @@
     <script src="scripts/PrepareData.js"></script>
 		<script src="scripts/CalculateData.js"></script>
     <script src="scripts/flight_search.js"></script>
-    <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_sur_v2/MLE_PS/interview_statistics.js"></script> 
+   <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_sur_v2/MLE_PS/interview_statistics_V2.js"></script> 
 
     <style>
       .table-font {
@@ -63,10 +63,9 @@
         var data = new google.visualization.DataTable();
 
         //define header
-        data.addColumn('string', 'Flight');
+        data.addColumn('string', 'Airline-Destination');
         data.addColumn('string', 'To');
         //data.addColumn('number', 'DOOP');
-        data.addColumn('string', 'Day of week');
         data.addColumn('number', 'Quota');
         data.addColumn('number', 'Completed');
 				data.addColumn('number', 'Missing');
@@ -77,10 +76,9 @@
           var row = quota_data[i];
           data.addRows([
           [
-            row.Flight, 
+            row.quota_id, 
             row.DestName,
             //row.DOOP, 
-            row.day_of_week_name,
             Number(row.Quota),
             Number(row.Completed), 
             Number(row.Difference), 
@@ -98,7 +96,7 @@
           'controlType': 'CategoryFilter',
           'containerId': 'filter_div',
           'options': {
-            'filterColumnLabel': 'Day of week'
+            'filterColumnLabel': 'To'
           }
         });
   

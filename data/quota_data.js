@@ -16,7 +16,7 @@ let quota_info = `
    },
    {
     "quota_id": "5W-AUH",
-    "Quota": 28,
+    "Quota": 41,
     "Airline": "WIZZ AIR",
     "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
     "Quarter": "2023-Q4"
@@ -30,7 +30,7 @@ let quota_info = `
    },
    {
     "quota_id": "6E-BOM",
-    "Quota": 28,
+    "Quota": 22,
     "Airline": "INDIGO",
     "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
     "Quarter": "2023-Q4"
@@ -51,7 +51,7 @@ let quota_info = `
    },
    {
     "quota_id": "8D-CMB",
-    "Quota": 24,
+    "Quota": 17,
     "Airline": "FITS AIR",
     "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
     "Quarter": "2023-Q4"
@@ -65,14 +65,14 @@ let quota_info = `
    },
    {
     "quota_id": "AI-BOM",
-    "Quota": 12,
+    "Quota": 24,
     "Airline": "AIR INDIA",
     "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
     "Quarter": "2023-Q4"
    },
    {
     "quota_id": "AK-KUL",
-    "Quota": 40,
+    "Quota": 62,
     "Airline": "AIR ASIA",
     "DestName": "KUL (Kuala Lumpur International - Malaysia)",
     "Quarter": "2023-Q4"
@@ -121,7 +121,7 @@ let quota_info = `
    },
    {
     "quota_id": "EK-CMB",
-    "Quota": 42,
+    "Quota": 35,
     "Airline": "EMIRATES",
     "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
     "Quarter": "2023-Q4"
@@ -135,7 +135,7 @@ let quota_info = `
    },
    {
     "quota_id": "EY-AUH",
-    "Quota": 43,
+    "Quota": 30,
     "Airline": "ETIHAD AIRWAYS",
     "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
     "Quarter": "2023-Q4"
@@ -149,7 +149,7 @@ let quota_info = `
    },
    {
     "quota_id": "FZ-CMB",
-    "Quota": 21,
+    "Quota": 14,
     "Airline": "FLY DUBAI",
     "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
     "Quarter": "2023-Q4"
@@ -170,7 +170,7 @@ let quota_info = `
    },
    {
     "quota_id": "GF-CMB",
-    "Quota": 21,
+    "Quota": 14,
     "Airline": "GULF AIR",
     "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
     "Quarter": "2023-Q4"
@@ -254,7 +254,7 @@ let quota_info = `
    },
    {
     "quota_id": "OD-KUL",
-    "Quota": 33,
+    "Quota": 11,
     "Airline": "BATIK AIR",
     "DestName": "KUL (Kuala Lumpur International - Malaysia)",
     "Quarter": "2023-Q4"
@@ -310,7 +310,7 @@ let quota_info = `
    },
    {
     "quota_id": "SG-BOM",
-    "Quota": 21,
+    "Quota": 15,
     "Airline": "SPICEJET",
     "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
     "Quarter": "2023-Q4"
@@ -366,7 +366,7 @@ let quota_info = `
    },
    {
     "quota_id": "UL-CMB",
-    "Quota": 105,
+    "Quota": 133,
     "Airline": "SRILANKAN AIRLINES",
     "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
     "Quarter": "2023-Q4"

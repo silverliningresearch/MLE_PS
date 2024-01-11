@@ -31,10 +31,30 @@ function clean_data ()
       if ( interview_data[i].quota_id.toLowerCase() == "qr-dia") interview_data[i].quota_id = "QR-DOH"; 
       if ( interview_data[i].quota_id.toLowerCase() == "qr-dia") interview_data[i].quota_id = "QR-DOH"; 
       if ( interview_data[i].quota_id.toLowerCase() == "qr-doha") interview_data[i].quota_id = "QR-DOH";       
+      if ( interview_data[i].quota_id.toLowerCase() == "q4-doh") interview_data[i].quota_id = "QR-DOH";       
       if ( interview_data[i].quota_id.toLowerCase() == "q4-doha") interview_data[i].quota_id = "QR-DOH";       
       if ( interview_data[i].quota_id.toLowerCase() == "q4-doha") interview_data[i].quota_id = "QR-DOH";       
-      if ( interview_data[i].quota_id.toLowerCase() == "ai-mumbai") interview_data[i].quota_id = "AI-BOM";       
-    
+      if ( interview_data[i].quota_id.toLowerCase() == "qr-dxb") interview_data[i].quota_id = "QR-DOH";       
+       
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Bombay","BOM");
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Mumbai","BOM");
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Mumba","BOM");
+      
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Abudabi","AUH");
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("AbuDabi","AUH");
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Abudhabi","AUH");
+
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Bahrain","BAH");
+
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Dubai","DXB");
+      
+      
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Singapore","SIN");
+
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Colombo","CMB");
+
+      interview_data[i].quota_id = interview_data[i].quota_id.replace("Malaysia","KUL");
+      
     }  
 
   }

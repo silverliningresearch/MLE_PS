@@ -1,14 +1,14 @@
 /************************************/
 function CalculateAirportAirLineReport() {
   prepareInterviewData();
-  //CalculateDOOP(); //add DOOP to flight list
+  CalculateDOOP(); //add DOOP to flight list
   var daily_plan_data_temp;
   daily_plan_data_temp = [];
   daily_plan_data_temp.length = 0;
   
   total_completed = 0;
   total_quota_completed = 0;
-  total_over_quota = 0;
+
   //check what not belong to quota data
   var found_temp = 0;
   var not_in_quota_list =[];
@@ -45,16 +45,14 @@ function CalculateAirportAirLineReport() {
 
     row.Completed_percent =(100*(row.Completed/row.Quota)).toFixed(0);
 
-    //total_completed = total_quota_completed + row.Completed;
-    total_quota_completed = total_quota_completed + row.Completed;
+    //total_completed = total_completed + row.Completed;
         
     if ( row.Difference > 0) { //over quota
-      //total_quota_completed = total_quota_completed + row.Quota*1;
-      total_over_quota = total_over_quota + row.Difference;
+      total_quota_completed = total_quota_completed +row.Quota*1;
     }
     else { //<= 0
       if (row.Completed) {
-        //total_quota_completed = total_quota_completed + row.Completed*1;
+        total_quota_completed = total_quota_completed + row.Completed*1;
       }
     }
 

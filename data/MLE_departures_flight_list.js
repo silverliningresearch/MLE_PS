@@ -781,7 +781,7 @@
   "DestName": "KUL (Kuala Lumpur International - Malaysia)"
  },
  {
-  "Flight": "Q2707",
+  "Flight": "q2706",
   "AirlineCode": "Q2",
   "Airline": "MALDIVIAN",
   "DOOP": "1000000",
@@ -2305,7 +2305,7 @@
   "DestName": "AUH (Abu Dhabi International - United Arab Emirates)"
  },
  {
-  "Flight": "Q2707",
+  "Flight": "q2706",
   "AirlineCode": "Q2",
   "Airline": "MALDIVIAN",
   "DOOP": "0030060",
@@ -4993,7 +4993,7 @@
   "DestName": "AUH (Abu Dhabi International - United Arab Emirates)"
  },
  {
-  "Flight": "Q2707",
+  "Flight": "q2706",
   "AirlineCode": "Q2",
   "Airline": "MALDIVIAN",
   "DOOP": "0030060",
@@ -5833,7 +5833,7 @@
   "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)"
  },
  {
-  "Flight": "Q2707",
+  "Flight": "q2706",
   "AirlineCode": "Q2",
   "Airline": "MALDIVIAN",
   "DOOP": "0000007",

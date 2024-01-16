@@ -1465,7 +1465,7 @@
   "DestName": "PVG (Shanghai Pudong International - China)"
  },
  {
-  "Flight": "Q2503",
+  "Flight": "Q2502",
   "AirlineCode": "Q2",
   "Airline": "MALDIVIAN",
   "DOOP": "0200500",
@@ -4057,7 +4057,7 @@
   "DestName": "PVG (Shanghai Pudong International - China)"
  },
  {
-  "Flight": "Q2503",
+  "Flight": "Q2502",
   "AirlineCode": "Q2",
   "Airline": "MALDIVIAN",
   "DOOP": "0200500",

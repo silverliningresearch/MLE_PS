@@ -247,8 +247,6 @@ function prepareInterviewData() {
     { 
       today_flight_list.push(flight);
     }
-    
-  
   }
  
   //add quota data
@@ -257,8 +255,10 @@ function prepareInterviewData() {
   
   for (i = 0; i < today_flight_list.length; i++) {
     let flight = today_flight_list[i];
+
     for (j = 0; j < quota_data.length; j++) {
       let quota = quota_data[j];
+
       if ((quota.quota_id == flight.quota_id))
       {
         if (quota.Quota>0) {

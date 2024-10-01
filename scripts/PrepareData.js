@@ -130,10 +130,10 @@ function getQuarterFromMonth(month, year)
   else if ((month == '04') || (month == '05') || (month == '06')) {
     quarter = "Q2";  
   }
-  else if ((month == '07') || (month == '08') || (month == '09')) {
+  else if ((month == '07') || (month == '08') || (month == '09') || (month == '10') ) {
     quarter = "Q3";  
   }
-  else if ((month == '10') || (month == '11') || (month == '12')) {
+  else if ( (month == '11') || (month == '12')) { //(month == '10') ||
     quarter = "Q4";  
   }
   return (year + "-" + quarter);

@@ -786,6 +786,353 @@ let quota_info = `
   "Airline": "AZUR AIR  RUSSIA",
   "DestName": "VKO (Moscow Vnukovo International - Russia)",
   "Quarter": "2024-Q3"
+ },
+ 
+ 
+ 
+ 
+  {
+  "quota_id": "3U-TFU",
+  "Quota": 12,
+  "Airline": "SICHUAN AIRLINES",
+  "DestName": "TFU (Chengdu Tianfu International Airport - China)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "6E-BLR",
+  "Quota": 28,
+  "Airline": "INDIGO",
+  "DestName": "BLR (Bangalore Kempegowda International - India)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "6E-BOM",
+  "Quota": 42,
+  "Airline": "INDIGO",
+  "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "6E-COK",
+  "Quota": 42,
+  "Airline": "INDIGO",
+  "DestName": "COK (Cochin International - India)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "8D-CMB",
+  "Quota": 27,
+  "Airline": "FITS AIR",
+  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "AI-BOM",
+  "Quota": 3,
+  "Airline": "AIR INDIA",
+  "DestName": "BOM (Mumbai Chhatrapati Shivaji International - India)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "AI-DEL",
+  "Quota": 18,
+  "Airline": "AIR INDIA",
+  "DestName": "DEL (Delhi Indira Gandhi International - India)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "AK-KUL",
+  "Quota": 63,
+  "Airline": "AIR ASIA",
+  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "B4-DWC",
+  "Quota": 6,
+  "Airline": "FLY BEOND",
+  "DestName": "DWC (Dubai World Central International - United Arab Emirates)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "B4-RUH",
+  "Quota": 4,
+  "Airline": "FLY BEOND",
+  "DestName": "RUH (Riyadh King Khalid International - Saudi Arabia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "BA-LHR",
+  "Quota": 12,
+  "Airline": "BRITISH AIRWAYS",
+  "DestName": "LHR (London Heathrow - United Kingdom)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "BS-DAC",
+  "Quota": 21,
+  "Airline": "US-BANGLA AIRLINES",
+  "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "C6-TAS",
+  "Quota": 4,
+  "Airline": "CENTRUM AIR",
+  "DestName": "TAS (Tashkent International - Uzbekistan)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "DV-ALA",
+  "Quota": 6,
+  "Airline": "SCAT AIRLINES",
+  "DestName": "ALA (Almaty International - Kazakhstan)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "EK-CMB",
+  "Quota": 49,
+  "Airline": "EMIRATES",
+  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "EK-DXB",
+  "Quota": 259,
+  "Airline": "EMIRATES",
+  "DestName": "DXB (Dubai International - United Arab Emirates)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "EY-AUH",
+  "Quota": 84,
+  "Airline": "ETIHAD AIRWAYS",
+  "DestName": "AUH (Abu Dhabi International - United Arab Emirates)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "FD-DMK",
+  "Quota": 31,
+  "Airline": "THAI AIRASIA",
+  "DestName": "DMK (Bangkok Don Mueang International - Thailand)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "FZ-CMB",
+  "Quota": 21,
+  "Airline": "FLY DUBAI",
+  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "FZ-DXB",
+  "Quota": 57,
+  "Airline": "FLY DUBAI",
+  "DestName": "DXB (Dubai International - United Arab Emirates)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "G9-SHJ",
+  "Quota": 18,
+  "Airline": "AIR ARABIA",
+  "DestName": "SHJ (Sharjah International - United Arab Emirates)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "GF-BAH",
+  "Quota": 18,
+  "Airline": "GULF AIR",
+  "DestName": "BAH (Bahrain International - Bahrain)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "GF-CMB",
+  "Quota": 21,
+  "Airline": "GULF AIR",
+  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "HX-HKG",
+  "Quota": 35,
+  "Airline": "HONGKONG AIRLINES",
+  "DestName": "HKG (Hong Kong International - Hong Kong)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "JD-PKX",
+  "Quota": 18,
+  "Airline": "BEIJING CAPITAL AIRLINES",
+  "DestName": "PKX (Beijing Daxing - China)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "KC-ALA",
+  "Quota": 6,
+  "Airline": "AIR ASTANA",
+  "DestName": "ALA (Almaty International - Kazakhstan)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "MF-DAC",
+  "Quota": 6,
+  "Airline": "XIAMEN AIR",
+  "DestName": "DAC (Dhaka Shahjalal International - Bangladesh)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "MH-KUL",
+  "Quota": 33,
+  "Airline": "MALAYSIA AIRLINES",
+  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "MU-KMG",
+  "Quota": 7,
+  "Airline": "CHINA EASTERN AIRLINES",
+  "DestName": "KMG (Kunming Changshui International - China)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "MU-PVG",
+  "Quota": 36,
+  "Airline": "CHINA EASTERN AIRLINES",
+  "DestName": "PVG (Shanghai Pudong International - China)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "NO-FCO",
+  "Quota": 7,
+  "Airline": "NEOS SPA",
+  "DestName": "FCO (Rome Leonardo da Vinci-Fiumicino - Italy)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "OD-KUL",
+  "Quota": 21,
+  "Airline": "BATIK AIR",
+  "DestName": "KUL (Kuala Lumpur International - Malaysia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "OQ-CMB",
+  "Quota": 9,
+  "Airline": "CHONGQING AIRLINES",
+  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "PG-BKK",
+  "Quota": 8,
+  "Airline": "BANGKOK AIRWAYS",
+  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "Q2-BKK",
+  "Quota": 3,
+  "Airline": "MALDIVIAN",
+  "DestName": "BKK (Bangkok Suvarnabhumi - Thailand)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "Q2-COK",
+  "Quota": 12,
+  "Airline": "MALDIVIAN",
+  "DestName": "COK (Cochin International - India)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "Q2-MED",
+  "Quota": 10,
+  "Airline": "MALDIVIAN",
+  "DestName": "MED (Medina Prince Mohammad bin Abdulaziz - Saudi Arabia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "Q2-PEK",
+  "Quota": 5,
+  "Airline": "MALDIVIAN",
+  "DestName": "PEK (Beijing Capital International - China)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "Q2-PVG",
+  "Quota": 5,
+  "Airline": "MALDIVIAN",
+  "DestName": "PVG (Shanghai Pudong International - China)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "Q2-TFU",
+  "Quota": 5,
+  "Airline": "MALDIVIAN",
+  "DestName": "TFU (Chengdu Tianfu International Airport - China)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "Q2-TRV",
+  "Quota": 12,
+  "Airline": "MALDIVIAN",
+  "DestName": "TRV (Trivandrum International - India)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "QR-DOH",
+  "Quota": 160,
+  "Airline": "QATAR AIRWAYS",
+  "DestName": "DOH (Doha Hamad International - Qatar)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "SQ-SIN",
+  "Quota": 84,
+  "Airline": "SINGAPORE AIRLINES",
+  "DestName": "SIN (Singapore Changi - Singapore)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "SU-SVO",
+  "Quota": 46,
+  "Airline": "AEROFLOT",
+  "DestName": "SVO (Moscow Sheremetyevo International - Russia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "SV-JED",
+  "Quota": 6,
+  "Airline": "SAUDI ARABIAN AIRLINES",
+  "DestName": "JED (Jeddah King Abdulaziz International - Saudi Arabia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "SV-RUH",
+  "Quota": 24,
+  "Airline": "SAUDI ARABIAN AIRLINES",
+  "DestName": "RUH (Riyadh King Khalid International - Saudi Arabia)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "TK-IST",
+  "Quota": 25,
+  "Airline": "TURKISH AIRLINES",
+  "DestName": "IST (Istanbul Ataturk International - Turkey)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "UL-CMB",
+  "Quota": 126,
+  "Airline": "SRILANKAN  AIRLINES",
+  "DestName": "CMB (Colombo Bandaranaike International - Sri Lanka)",
+  "Quarter": "2025-Q3"
+ },
+ {
+  "quota_id": "WY-MCT",
+  "Quota": 21,
+  "Airline": "OMAN AIR",
+  "DestName": "MCT (Muscat International - Oman)",
+  "Quarter": "2025-Q3"
  }
   
 ]    

@@ -271,7 +271,7 @@ function prepareInterviewData() {
        }
     }
   }
-   console.log("today_flight_list: ", today_flight_list);
+  //  console.log("today_flight_list: ", today_flight_list);
    //console.log("quota_data: ", quota_data);
-   console.log("daily_plan_data: ", daily_plan_data);
+  //  console.log("daily_plan_data: ", daily_plan_data);
 }
